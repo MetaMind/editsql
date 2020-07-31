@@ -7,4 +7,6 @@ logs_soql_*
 processed_data_soql*
 .DS_Store
 word_emb/
-logs/
+logs/*
+*.ipynb
+
