@@ -75,9 +75,9 @@ class ATISDataset():
             valid_output_seqs = collapse_list(self.valid_data.get_ex_properties(lambda i: i.output_seqs()))
             all_output_seqs = train_output_seqs + valid_output_seqs
 
-            sql_keywords = ['.', 't1', 't2', '=', 'select', 'as', 'join', 'on', ')', '(', 'where', 't3', 'by', ',', 'group', 'distinct', 't4', 'and', 'limit', 'desc', '>', 'avg', 'having', 'max', 'in', '<', 'sum', 't5', 'intersect', 'not', 'min', 'except', 'or', 'asc', 'like', '!', 'union', 'between', 't6', '-', 't7', '+', '/']
+            sql_keywords = ['.', '=', 'select', ')', '(', 'where', 'by', ',', 'group', 'count_distinct', 'and', 'limit', 'nulls', 'desc', '>', 'avg', 'having', 'max', 'in', '<', 'sum', 'not', 'min', 'or', 'asc', 'like', '!']
             sql_keywords += ['count', 'from', 'value', 'order']
-            sql_keywords += ['group_by', 'order_by', 'limit_value', '!=']
+            sql_keywords += ['group_by', 'order_by', 'limit_value', 'nulls_value', '!=']
 
             # skip column_names_surface_form but keep sql_keywords
             skip_tokens = list(set(column_names_surface_form) - set(sql_keywords))
@@ -95,6 +95,7 @@ class ATISDataset():
                 is_input='output',
                 anonymizer=self.anonymizer if params.anonymization_scoring else None,
                 skip=skip_tokens)
+
         else:
             self.train_data = ds.DatasetSplit(
                 os.path.join(params.data_directory, params.processed_train_filename),

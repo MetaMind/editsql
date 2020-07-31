@@ -82,16 +82,17 @@ class Vocabulary:
         if os.path.exists(filename):
             infile = open(filename, 'rb')
             loaded_vocab = pickle.load(infile)
+            self.__dict__.update(loaded_vocab)
             infile.close()
 
             print("Loaded vocabulary from " + str(filename))
-            if loaded_vocab.id_to_token != self.id_to_token \
-                or loaded_vocab.token_to_id != self.token_to_id:
-                print("Loaded vocabulary is different than generated vocabulary.")
+            # if loaded_vocab.id_to_token != self.id_to_token \
+            #     or loaded_vocab.token_to_id != self.token_to_id:
+            #     print("Loaded vocabulary is different than generated vocabulary.")
         else:
             print("Writing vocabulary to " + str(filename))
             outfile = open(filename, 'wb')
-            pickle.dump(self, outfile)
+            pickle.dump(self.__dict__, outfile, 2)
             outfile.close()
 
     def __len__(self):

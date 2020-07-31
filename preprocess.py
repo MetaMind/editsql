@@ -74,6 +74,7 @@ def read_database_schema(database_schema_filename, schema_tokens, column_names, 
 
 
 def remove_from_with_join(format_sql_2):
+  flag = False
   used_tables_list = []
   format_sql_3 = []
   table_to_name = {}
@@ -94,6 +95,9 @@ def remove_from_with_join(format_sql_2):
       table_list = []
       format_sql_3.append(sub_sql)
     elif sub_sql.startswith('from'):
+      if flag:
+        continue
+      flag = True
       new_sub_sql = None
       sub_sql_tokens = sub_sql.split()
       for t_i, t in enumerate(sub_sql_tokens):
@@ -204,6 +208,12 @@ def add_table_name(format_sql_3, used_tables, column_names, schema_tokens):
           if (ii+1 < len(tokens) and tokens[ii+1] != '.' and tokens[ii+1] != '(') or ii+1 == len(tokens):
             if '{}.{}'.format(table_name,token) in schema_tokens:
               tokens[ii] = '{} . {}'.format(table_name,token)
+        if token in column_names and tokens[ii-1] == '.':
+          if tokens[ii-2] not in used_tables:
+            parent_col =  ''.join(tokens[ii-2:ii+1])
+            if '{}.{}'.format(table_name, parent_col) in schema_tokens:
+              tokens = tokens[:ii-2] + tokens[ii:]
+              tokens[ii-2] = '{} . {}'.format(table_name, parent_col)
       format_sql_4.append(' '.join(tokens))
     return format_sql_4
 
@@ -422,6 +432,30 @@ def read_data_json(split_json, interaction_list, database_schemas, column_names,
   return interaction_list
 
 
+def read_wiki(wiki_dir, database_schemas, column_names, output_vocab, schema_tokens, remove_from):
+  interaction_list = {}
+
+  train_json = os.path.join(wiki_dir, 'train.json')
+  interaction_list = read_spider_split(train_json, interaction_list, database_schemas, column_names, output_vocab, schema_tokens, remove_from)
+
+  dev_json = os.path.join(wiki_dir, 'dev.json')
+  interaction_list = read_spider_split(dev_json, interaction_list, database_schemas, column_names, output_vocab, schema_tokens, remove_from)
+
+  return interaction_list
+
+
+def read_soql(soql_dir, database_schemas, column_names, output_vocab, schema_tokens, remove_from):
+  interaction_list = {}
+
+  train_json = os.path.join(soql_dir, 'train.json')
+  interaction_list = read_spider_split(train_json, interaction_list, database_schemas, column_names, output_vocab, schema_tokens, remove_from)
+
+  dev_json = os.path.join(soql_dir, 'dev.json')
+  interaction_list = read_spider_split(dev_json, interaction_list, database_schemas, column_names, output_vocab, schema_tokens, remove_from)
+
+  return interaction_list
+
+
 def read_spider(spider_dir, database_schemas, column_names, output_vocab, schema_tokens, remove_from):
   interaction_list = {}
 
@@ -477,6 +511,10 @@ def preprocess(dataset, remove_from=False):
   output_vocab = ['_UNK', '_EOS', '.', 't1', 't2', '=', 'select', 'from', 'as', 'value', 'join', 'on', ')', '(', 'where', 't3', 'by', ',', 'count', 'group', 'order', 'distinct', 't4', 'and', 'limit', 'desc', '>', 'avg', 'having', 'max', 'in', '<', 'sum', 't5', 'intersect', 'not', 'min', 'except', 'or', 'asc', 'like', '!', 'union', 'between', 't6', '-', 't7', '+', '/']
   if remove_from:
     output_vocab = ['_UNK', '_EOS', '=', 'select', 'value', ')', '(', 'where', ',', 'count', 'group_by', 'order_by', 'distinct', 'and', 'limit_value', 'limit', 'desc', '>', 'avg', 'having', 'max', 'in', '<', 'sum', 'intersect', 'not', 'min', 'except', 'or', 'asc', 'like', '!=', 'union', 'between', '-', '+', '/']
+  if dataset == 'soql':
+    output_vocab = ['_UNK', '_EOS', '.', '=', '!=', '``', '>=', '<=', 'select', 'from', 'value', ')', '(', 'where', ',', 'count', 'group', 'order', 'count_distinct', 'and', 'limit', 'desc', '>', 'avg', 'having', 'max', 'in', '<', 'sum', 'not', 'min', 'or', 'asc', 'like', '!', 'between']
+    if remove_from:
+      output_vocab = ['_UNK', '_EOS', '=', 'select', 'value', ')', '(', 'where', ',', 'count', 'group_by', 'order_by', 'count_distinct', 'and', 'limit_value', 'limit', 'desc', '>', 'avg', 'having', 'max', 'in', '<', 'sum', 'not', 'min', 'except', 'or', 'asc', 'like', '!=', 'between', '``', 'nulls', 'first', 'last', 'true', 'false']
   print('size of output_vocab', len(output_vocab))
   print('output_vocab', output_vocab)
   print()
@@ -488,6 +526,20 @@ def preprocess(dataset, remove_from=False):
     if remove_from:
       output_dir = 'data/spider_data_removefrom'
     train_database, dev_database = read_db_split(spider_dir)
+  elif dataset == 'soql':
+    soql_dir = 'data/soql'
+    database_schema_filename = 'data/soql/tables.json'
+    output_dir = 'data/soql_data'
+    if remove_from:
+      output_dir = 'data/soql_data_removefrom'
+    train_database, dev_database = read_db_split(soql_dir)
+  elif dataset == 'wiki':
+    wiki_dir = 'data/wiki/'
+    database_schema_filename = 'data/wiki/tables.json'
+    output_dir = 'data/wiki_data'
+    if remove_from:
+      output_dir = 'data/wiki_data_removefrom'
+    train_database, dev_database = read_db_split(wiki_dir)
   elif dataset == 'sparc':
     sparc_dir = 'data/sparc/'
     database_schema_filename = 'data/sparc/tables.json'
@@ -527,8 +579,13 @@ def preprocess(dataset, remove_from=False):
     interaction_list = read_sparc(sparc_dir, database_schemas, column_names, output_vocab, schema_tokens, remove_from)
   elif dataset == 'cosql':
     interaction_list = read_cosql(cosql_dir, database_schemas, column_names, output_vocab, schema_tokens, remove_from)
+  elif dataset == 'wiki':
+    interaction_list = read_wiki(wiki_dir, database_schemas, column_names, output_vocab, schema_tokens, remove_from)
+  elif dataset == 'soql':
+    interaction_list = read_soql(soql_dir, database_schemas, column_names, output_vocab, schema_tokens, remove_from)
 
   print('interaction_list length', len(interaction_list))
+
 
   train_interaction = []
   for database_id in interaction_list:
@@ -537,20 +594,23 @@ def preprocess(dataset, remove_from=False):
 
   dev_interaction = []
   for database_id in dev_database:
-    dev_interaction += interaction_list[database_id]
-
-  print('train interaction: ', len(train_interaction))
-  print('dev interaction: ', len(dev_interaction))
-
+    try:
+      dev_interaction += interaction_list[database_id]
+    except KeyError as e:
+      pass
+  
   write_interaction(train_interaction, 'train', output_dir)
   write_interaction(dev_interaction, 'dev', output_dir)
+  
+  
+
 
   return
 
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
-  parser.add_argument("--dataset", choices=('spider', 'sparc', 'cosql'), default='sparc')
+  parser.add_argument("--dataset", choices=('spider', 'sparc', 'cosql', 'wiki', 'soql'), default='sparc')
   parser.add_argument('--remove_from', action='store_true', default=False)
   args = parser.parse_args()
   preprocess(args.dataset, args.remove_from)

@@ -142,6 +142,7 @@ class ATISModel(torch.nn.Module):
         self.params = params
 
         if params.use_bert:
+            print (params.use_bert, '*********************************')
             self.model_bert, self.tokenizer, self.bert_config = utils_bert.get_bert(params)
 
         if 'atis' not in params.data_directory:
@@ -385,6 +386,6 @@ class ATISModel(torch.nn.Module):
         Inputs:
             filename (str): Name of file containing parameters.
         """
-        self.load_state_dict(torch.load(filename))
+        self.load_state_dict(torch.load(filename, map_location='cpu'))
         print("Loaded model from file " + filename)
 
