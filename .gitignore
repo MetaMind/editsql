@@ -9,4 +9,5 @@ processed_data_soql*
 word_emb/
 logs/*
 *.ipynb
+__pycache__
 
