@@ -8,13 +8,13 @@
 #    the result (models, logs, prediction outputs) are saved in $LOGDIR
 
 GLOVE_PATH="/Users/bsuri/GitHub/Text2SQL/editsql/word_emb/glove.840B.300d.txt" # you need to change this
-LOGDIR="logs/logs_spider_editsql"
+LOGDIR="logs/logs_wiki_editsql"
 
-CUDA_VISIBLE_DEVICES=0 python3 run.py --raw_train_filename="data/spider_data_removefrom/train.pkl" \
-          --raw_validation_filename="data/spider_data_removefrom/dev.pkl" \
-          --database_schema_filename="data/spider_data_removefrom/tables.json" \
+CUDA_VISIBLE_DEVICES=0 python3 run.py --raw_train_filename="data/wiki_data_removefrom/train.pkl" \
+          --raw_validation_filename="data/wiki_data_removefrom/dev.pkl" \
+          --database_schema_filename="data/wiki_data_removefrom/tables.json" \
           --embedding_filename=$GLOVE_PATH \
-          --data_directory="processed_data_spider_removefrom" \
+          --data_directory="processed_data_wiki_removefrom" \
           --input_key="utterance" \
           --use_schema_encoder=1 \
           --use_schema_attention=1 \

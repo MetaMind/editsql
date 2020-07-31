@@ -2,19 +2,19 @@
 
 # 1. preprocess dataset by the following. It will produce data/spider_data_removefrom/
 
-# python3 preprocess.py --dataset=spider --remove_from
+python3 preprocess.py --dataset=wiki --remove_from
 
 # 2. train and evaluate.
 #    the result (models, logs, prediction outputs) are saved in $LOGDIR
 
 GLOVE_PATH="/Users/bsuri/GitHub/Text2SQL/editsql/word_emb/glove.840B.300d.txt" # you need to change this
-LOGDIR="logs/logs_spider_editsql"
+LOGDIR="logs/logs_wiki_editsql"
 
-CUDA_VISIBLE_DEVICES=0 python3 run.py --raw_train_filename="data/spider_data_removefrom/train.pkl" \
-          --raw_validation_filename="data/spider_data_removefrom/dev.pkl" \
-          --database_schema_filename="data/spider_data_removefrom/tables.json" \
+CUDA_VISIBLE_DEVICES=0 python3 run.py --raw_train_filename="data/wiki_data_removefrom/train.pkl" \
+          --raw_validation_filename="data/wiki_data_removefrom/dev.pkl" \
+          --database_schema_filename="data/wiki_data_removefrom/tables.json" \
           --embedding_filename=$GLOVE_PATH \
-          --data_directory="processed_data_spider_removefrom" \
+          --data_directory="processed_data_wiki_removefrom" \
           --input_key="utterance" \
           --use_schema_encoder=1 \
           --use_schema_attention=1 \
@@ -28,12 +28,12 @@ CUDA_VISIBLE_DEVICES=0 python3 run.py --raw_train_filename="data/spider_data_rem
           --interaction_level=1 \
           --reweight_batch=1 \
           --freeze=1 \
+          --train=1 \
           --logdir=$LOGDIR \
           --evaluate=1 \
           --evaluate_split="valid" \
-          --use_predicted_queries=1 \
-          --save_file="$LOGDIR/save_12"
+          --use_predicted_queries=1
 
 # 3. get evaluation result
 
-python3 postprocess_eval.py --dataset=spider --split=dev --pred_file $LOGDIR/valid_use_predicted_queries_predictions.json --remove_from
+# python3 postprocess_eval.py --dataset=wiki --split=dev --pred_file $LOGDIR/valid_use_predicted_queries_predictions.json --remove_from
