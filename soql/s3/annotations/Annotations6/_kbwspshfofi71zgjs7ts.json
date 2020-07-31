@@ -1,0 +1,1 @@
+{"question":"List the description for each document.","query":"SELECT Description FROM Document","sObject":"Document","fields":["Description"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

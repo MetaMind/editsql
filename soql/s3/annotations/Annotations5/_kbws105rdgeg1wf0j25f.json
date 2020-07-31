@@ -1,0 +1,1 @@
+{"question":"Show me the lead source for contact Bharat Suri.","query":"SELECT LeadSource FROM Contact WHERE Name = 'Bharat Suri'","sObject":"Contact","fields":["LeadSource"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"Name","op":"=","value":"Bharat Suri"}]}

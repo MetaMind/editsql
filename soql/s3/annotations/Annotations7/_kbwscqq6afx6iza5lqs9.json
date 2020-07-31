@@ -1,0 +1,1 @@
+{"question":"Count the number of contact records in the finance department.","query":"SELECT count() FROM Contact WHERE Department = 'Finance'","sObject":"Contact","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"Department","op":"=","value":"Finance"}]}

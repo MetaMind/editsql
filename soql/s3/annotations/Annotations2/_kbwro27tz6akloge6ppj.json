@@ -1,0 +1,1 @@
+{"question":"Search the name phone number and email of all contacts in the finance department.","query":"SELECT Email,Name,Phone FROM Contact WHERE Department = 'Finance'","sObject":"Contact","fields":["Email","Name","Phone"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"Department","op":"=","value":"Finance"}]}

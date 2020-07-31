@@ -1,0 +1,1 @@
+{"question":"List the lead sources for all finance department contacts.","query":"SELECT LeadSource FROM Contact WHERE Department = 'Finance'","sObject":"Contact","fields":["LeadSource"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"Department","op":"=","value":"Finance"}]}

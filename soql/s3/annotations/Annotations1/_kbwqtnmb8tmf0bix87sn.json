@@ -1,0 +1,1 @@
+{"question":"What is the department name and contact email for all contacts?","query":"SELECT Department,Email FROM Contact","sObject":"Contact","fields":["Department","Email"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

@@ -1,0 +1,1 @@
+{"question":"Show me the first names of all leads","query":"SELECT FirstName FROM Lead","sObject":"Lead","fields":["FirstName"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

@@ -1,0 +1,1 @@
+{"question":"How many accounts have more than 500 employees?","query":"SELECT count() FROM Account Where NumberOfEmployees > 500","sObject":"Account","fields":["Name"],"order_by":"AnnualRevenue","orderby_sort":"DESC","nulls":"FIRST","max_records":"1","filters":[]}

@@ -1,0 +1,1 @@
+{"question":"Count the total number of cases. ","query":"SELECT count() FROM Case","sObject":"Case","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

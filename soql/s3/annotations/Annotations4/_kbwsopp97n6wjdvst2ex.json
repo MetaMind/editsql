@@ -1,0 +1,1 @@
+{"question":"Who is the author for the document names quip document?","query":"SELECT Author.Name FROM Document WHERE Name = 'Quip Document'","sObject":"Document","fields":["Name"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

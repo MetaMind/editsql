@@ -1,0 +1,1 @@
+{"question":"Show me the author name for each document.","query":"SELECT Author.Name FROM Document","sObject":"Document","fields":["AuthorId"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

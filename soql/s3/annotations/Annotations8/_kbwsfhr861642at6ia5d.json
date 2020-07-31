@@ -1,0 +1,1 @@
+{"question":"How many accounts have less than 500 employees or less than a million annual revenue?","query":"SELECT count() FROM Account Where NumberOfEmployees < 500 OR AnnualRevenue < 100000","sObject":"Account","fields":["Name"],"order_by":"AnnualRevenue","orderby_sort":"DESC","nulls":"FIRST","max_records":"1","filters":[]}

@@ -1,0 +1,1 @@
+{"question":"Show me account id, comments, and case numbers","query":"SELECT AccountId, CaseNumber, Comments FROM Case","sObject":"Case","fields":["AccountId"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"IsClosed","op":"=","value":"false"}]}

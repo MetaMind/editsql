@@ -1,0 +1,1 @@
+{"question":"Show me the account descriptions.","query":"SELECT Description FROM Account","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

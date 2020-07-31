@@ -1,0 +1,1 @@
+{"question":"Which accounts are in San Francisco?","query":"SELECT Name FROM Account WHERE BillingCity = 'San Francisco'","sObject":"Account","fields":["Name"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"BillingCity","op":"=","value":"SanFrancisco"}]}

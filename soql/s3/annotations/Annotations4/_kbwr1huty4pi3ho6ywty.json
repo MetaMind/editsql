@@ -1,0 +1,1 @@
+{"question":"What is the name description and email of all contacts?","query":"SELECT Department,Description,Email FROM Contact","sObject":"Contact","fields":["Department","Description","Email"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

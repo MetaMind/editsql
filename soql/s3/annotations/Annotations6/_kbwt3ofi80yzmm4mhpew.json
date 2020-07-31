@@ -1,0 +1,1 @@
+{"question":"Count the number of documents that are not public.","query":"SELECT count() FROM Document WHERE IsPublic != true","sObject":"Document","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"IsPublic","op":"!=","value":"true"}]}

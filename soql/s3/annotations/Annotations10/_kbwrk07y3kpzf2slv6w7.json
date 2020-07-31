@@ -1,0 +1,1 @@
+{"question":"How many accounts are in New York city?","query":"SELECT count() FROM Account WHERE BillingCity = 'New York'","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

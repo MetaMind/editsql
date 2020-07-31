@@ -1,0 +1,1 @@
+{"question":"How can I contact Acme?","query":"SELECT Phone FROM Account WHERE Name='Acme'","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

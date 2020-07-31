@@ -1,0 +1,1 @@
+{"question":"What city is Acme in?","query":"SELECT BillingCity FROM Account WHERE Name='Acme'","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

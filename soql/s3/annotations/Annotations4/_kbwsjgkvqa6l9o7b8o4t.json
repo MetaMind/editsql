@@ -1,0 +1,1 @@
+{"question":"Show me the id of the author of all documents.","query":"SELECT AuthorId FROM Document","sObject":"Document","fields":["AuthorId"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

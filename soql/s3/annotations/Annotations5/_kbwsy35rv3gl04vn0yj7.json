@@ -1,0 +1,1 @@
+{"question":"Show me the count of documents created by Bharat Suri.","query":"SELECT count() FROM Document WHERE Author.Name = 'Bharat Suri'","sObject":"Document","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

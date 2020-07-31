@@ -1,0 +1,1 @@
+{"question":"Show me the names of all accounts which have annual revenue less than a million.","query":"SELECT Name FROM Account WHERE AnnualRevenue < 1000000","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

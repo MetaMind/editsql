@@ -1,0 +1,75 @@
+SELECT AccountId FROM Contact WHERE Name = 'Bharat Suri'	salesforce_2
+SELECT count(id) FROM Contact WHERE Department = 'Finance'	salesforce_2
+SELECT Phone FROM Account WHERE Name = 'Acme'	salesforce_2
+SELECT Phone FROM Account WHERE Name = 'Acme'	salesforce_2
+SELECT Department FROM Contact WHERE Department != ''	salesforce_2
+SELECT AuthorId FROM Document	salesforce_2
+SELECT Description FROM Document	salesforce_2
+SELECT AccountId FROM Contact WHERE Name = 'Bharat Suri'	salesforce_2
+SELECT LeadSource FROM Contact WHERE Department = 'Finance'	salesforce_2
+SELECT Phone FROM Account WHERE Name = 'Acme'	salesforce_2
+SELECT count(id) FROM Case WHERE IsClosed = false	salesforce_2
+SELECT Phone FROM Contact WHERE Department = 'Finance'	salesforce_2
+SELECT Description FROM Document	salesforce_2
+SELECT Description FROM Contact	salesforce_2
+SELECT Type FROM Account Where Name = 'Acme'	salesforce_2
+SELECT Website FROM Account Where Name = 'Acme'	salesforce_2
+SELECT Department FROM Contact WHERE Name != 'Bharat Suri'	salesforce_2
+SELECT count(id) FROM Account WHERE BillingCity = 'New York'	salesforce_2
+SELECT Description FROM Contact WHERE Department = 'Finance'	salesforce_2
+SELECT count(id) FROM Account	salesforce_2
+SELECT BillingStreet, BillingState, BillingPostalCode FROM Account	salesforce_2
+SELECT AccountId FROM Contact	salesforce_2
+SELECT count(id) FROM Contact	salesforce_2
+SELECT Name FROM Account WHERE BillingCountry = 'USA'	salesforce_2
+SELECT Name FROM Account WHERE BillingCity = 'New York'	salesforce_2
+SELECT AnnualRevenue FROM Account Where BillingCity = 'San Francisco'	salesforce_2
+SELECT count(id) FROM Document WHERE IsPublic = false	salesforce_2
+SELECT Id FROM Account	salesforce_2
+SELECT LeadSource FROM Contact WHERE Name = 'Bharat Suri'	salesforce_2
+SELECT Name FROM Account WHERE Type = 'Prospect'	salesforce_2
+SELECT Name FROM Account WHERE Type = 'Customer'	salesforce_2
+SELECT Phone FROM Account WHERE Name = 'Acme'	salesforce_2
+SELECT Department,Email FROM Contact	salesforce_2
+SELECT Description FROM Contact WHERE Department = 'Finance'	salesforce_2
+SELECT Description FROM Case	salesforce_2
+SELECT BillingCity FROM Account WHERE Name = 'Acme'	salesforce_2
+SELECT count(id) FROM Case WHERE IsClosed = false	salesforce_2
+SELECT Name FROM Account WHERE Type = 'Customer'	salesforce_2
+SELECT Keywords FROM Document WHERE Name = 'quip document'	salesforce_2
+SELECT count(id) FROM Account Where NumberOfEmployees > 500 AND AnnualRevenue > 100000	salesforce_2
+SELECT Description FROM Contact WHERE Name = 'Bharat Suri'	salesforce_2
+SELECT DeveloperName FROM Document	salesforce_2
+SELECT count(id) FROM Document	salesforce_2
+SELECT Description FROM Contact WHERE Department = 'Finance'	salesforce_2
+SELECT count(id) FROM Account WHERE BillingCity = 'SanFrancisco'	salesforce_2
+SELECT AuthorId FROM Document	salesforce_2
+SELECT count(id) FROM Case	salesforce_2
+SELECT count(id) FROM Account WHERE BillingCity = 'New York'	salesforce_2
+SELECT count(id) FROM Lead	salesforce_2
+SELECT Department,Email FROM Contact	salesforce_2
+SELECT BillingCity FROM Account WHERE AnnualRevenue > 1000000	salesforce_2
+SELECT NumberOfEmployees FROM Account WHERE Name = 'Acme'	salesforce_2
+SELECT count(id) FROM Account WHERE Type = 'Customer'	salesforce_2
+SELECT count(id) FROM Contact	salesforce_2
+SELECT Email,Name,Phone FROM Contact WHERE Department = 'Finance'	salesforce_2
+SELECT Name FROM Account	salesforce_2
+SELECT Name FROM Lead Where City = 'San Francisco' 	salesforce_2
+SELECT Name FROM Account WHERE AnnualRevenue > 10000000	salesforce_2
+SELECT BillingState FROM Account	salesforce_2
+SELECT count(id) FROM Document WHERE IsPublic = true	salesforce_2
+SELECT Description FROM Document	salesforce_2
+SELECT BillingCity FROM Account Where Name = 'Acme'	salesforce_2
+SELECT Name FROM Account WHERE BillingCountry = 'USA'	salesforce_2
+SELECT Phone FROM Contact	salesforce_2
+SELECT count(id) FROM Contact WHERE Department = 'Finance'	salesforce_2
+SELECT Phone FROM Account WHERE Name = 'Acme'	salesforce_2
+SELECT count(id) FROM Account WHERE AnnualRevenue < 1000000	salesforce_2
+SELECT count(id) FROM Contact WHERE Department != ''	salesforce_2
+SELECT Department,Description,Email FROM Contact	salesforce_2
+SELECT count(id) FROM Account WHERE Type = 'Customer'	salesforce_2
+SELECT Name FROM Account	salesforce_2
+SELECT Name FROM Contact WHERE Department = 'Finance'	salesforce_2
+SELECT count(id) FROM Account WHERE NumberOfEmployees > 500	salesforce_2
+SELECT BillingCity FROM Account WHERE AnnualRevenue > 1000000	salesforce_2
+SELECT count(id) FROM Contact WHERE Department = 'Finance'	salesforce_2

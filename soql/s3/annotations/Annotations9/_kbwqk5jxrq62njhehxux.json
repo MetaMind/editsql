@@ -1,0 +1,1 @@
+{"question":"List the id of accounts for my cases","query":"SELECT AccountId FROM Case WHERE IsClosed = false","sObject":"Case","fields":["AccountId"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"IsClosed","op":"=","value":"false"}]}

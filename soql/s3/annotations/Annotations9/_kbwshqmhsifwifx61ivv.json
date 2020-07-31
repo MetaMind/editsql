@@ -1,0 +1,1 @@
+{"question":"Show me the annual revenue for all accounts in San Francisco.","query":"SELECT AnnualRevenue FROM Account Where BillingCity='San Francisco'","sObject":"Account","fields":["Name"],"order_by":"AnnualRevenue","orderby_sort":"DESC","nulls":"FIRST","max_records":"1","filters":[]}

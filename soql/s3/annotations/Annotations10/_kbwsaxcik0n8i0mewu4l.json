@@ -1,0 +1,1 @@
+{"question":"Which is my most profitable account?","query":"SELECT Name FROM Account ORDER BY AnnualRevenue DESC NULLS FIRST LIMIT 1","sObject":"Account","fields":["Name"],"order_by":"AnnualRevenue","orderby_sort":"DESC","nulls":"FIRST","max_records":"1","filters":[]}

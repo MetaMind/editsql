@@ -1,0 +1,1 @@
+{"question":"What is the account id for Bharat Suri?","query":"SELECT AccountId FROM Contact WHERE Name = 'Bharat Suri'","sObject":"Contact","fields":["AccountId"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"Name","op":"=","value":"Bharat Suri"}]}

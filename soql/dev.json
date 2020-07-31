@@ -1,0 +1,4797 @@
+[
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT AccountId FROM Contact WHERE Name = 'Bharat Suri'",
+    "query_toks": [
+      "SELECT",
+      "AccountId",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Name",
+      "=",
+      "'Bharat",
+      "Suri",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "accountid",
+      "from",
+      "contact",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "What is the account id for contact Bharat Suri?",
+    "question_toks": [
+      "What",
+      "is",
+      "the",
+      "account",
+      "id",
+      "for",
+      "contact",
+      "Bharat",
+      "Suri",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.accountid__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.name__"
+          ],
+          "\"Bharat Suri\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Contact WHERE Department = 'Finance'",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Department",
+      "=",
+      "'Finance",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "contact",
+      "where",
+      "department",
+      "=",
+      "value"
+    ],
+    "question": "Show me a count of the contacts in the finance department.",
+    "question_toks": [
+      "Show",
+      "me",
+      "a",
+      "count",
+      "of",
+      "the",
+      "contacts",
+      "in",
+      "the",
+      "finance",
+      "department",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__contact.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.department__"
+          ],
+          "\"Finance\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Phone FROM Account WHERE Name = 'Acme'",
+    "query_toks": [
+      "SELECT",
+      "Phone",
+      "FROM",
+      "Account",
+      "WHERE",
+      "Name",
+      "=",
+      "'Acme",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "phone",
+      "from",
+      "account",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "What is the contact number for account Acme?",
+    "question_toks": [
+      "What",
+      "is",
+      "the",
+      "contact",
+      "number",
+      "for",
+      "account",
+      "Acme",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.phone__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.name__"
+          ],
+          "\"Acme\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Phone FROM Account WHERE Name = 'Acme'",
+    "query_toks": [
+      "SELECT",
+      "Phone",
+      "FROM",
+      "Account",
+      "WHERE",
+      "Name",
+      "=",
+      "'Acme",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "phone",
+      "from",
+      "account",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "What is the phone number for account Acme?",
+    "question_toks": [
+      "What",
+      "is",
+      "the",
+      "phone",
+      "number",
+      "for",
+      "account",
+      "Acme",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.phone__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.name__"
+          ],
+          "\"Acme\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Department FROM Contact WHERE Department != ''",
+    "query_toks": [
+      "SELECT",
+      "Department",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Department",
+      "!",
+      "=",
+      "``"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "department",
+      "from",
+      "contact",
+      "where",
+      "department",
+      "!",
+      "=",
+      "``"
+    ],
+    "question": "Show me all contact departments that are not empty.",
+    "question_toks": [
+      "Show",
+      "me",
+      "all",
+      "contact",
+      "departments",
+      "that",
+      "are",
+      "not",
+      "empty",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.department__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          6,
+          [
+            0,
+            "__contact.department__"
+          ],
+          "\"\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT AuthorId FROM Document",
+    "query_toks": [
+      "SELECT",
+      "AuthorId",
+      "FROM",
+      "Document"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "authorid",
+      "from",
+      "document"
+    ],
+    "question": "List the account id for all documents.",
+    "question_toks": [
+      "List",
+      "the",
+      "account",
+      "id",
+      "for",
+      "all",
+      "documents",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "document",
+        "table_unit": "__document__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__document.authorid__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Description FROM Document",
+    "query_toks": [
+      "SELECT",
+      "Description",
+      "FROM",
+      "Document"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "description",
+      "from",
+      "document"
+    ],
+    "question": "Describe all documents.",
+    "question_toks": [
+      "Describe",
+      "all",
+      "documents",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "document",
+        "table_unit": "__document__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__document.description__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT AccountId FROM Contact WHERE Name = 'Bharat Suri'",
+    "query_toks": [
+      "SELECT",
+      "AccountId",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Name",
+      "=",
+      "'Bharat",
+      "Suri",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "accountid",
+      "from",
+      "contact",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "What is the account id for Bharat Suri?",
+    "question_toks": [
+      "What",
+      "is",
+      "the",
+      "account",
+      "id",
+      "for",
+      "Bharat",
+      "Suri",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.accountid__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.name__"
+          ],
+          "\"Bharat Suri\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT LeadSource FROM Contact WHERE Department = 'Finance'",
+    "query_toks": [
+      "SELECT",
+      "LeadSource",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Department",
+      "=",
+      "'Finance",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "leadsource",
+      "from",
+      "contact",
+      "where",
+      "department",
+      "=",
+      "value"
+    ],
+    "question": "List the lead sources for all finance department contacts.",
+    "question_toks": [
+      "List",
+      "the",
+      "lead",
+      "sources",
+      "for",
+      "all",
+      "finance",
+      "department",
+      "contacts",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.leadsource__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.department__"
+          ],
+          "\"Finance\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Phone FROM Account WHERE Name = 'Acme'",
+    "query_toks": [
+      "SELECT",
+      "Phone",
+      "FROM",
+      "Account",
+      "WHERE",
+      "Name",
+      "=",
+      "'Acme",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "phone",
+      "from",
+      "account",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "How do I contact Acme account?",
+    "question_toks": [
+      "How",
+      "do",
+      "I",
+      "contact",
+      "Acme",
+      "account",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.phone__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.name__"
+          ],
+          "\"Acme\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Case WHERE IsClosed = false",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Case",
+      "WHERE",
+      "IsClosed",
+      "=",
+      "false"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "case",
+      "where",
+      "isclosed",
+      "=",
+      "false"
+    ],
+    "question": "How many cases are open?",
+    "question_toks": [
+      "How",
+      "many",
+      "cases",
+      "are",
+      "open",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "case",
+        "table_unit": "__case__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__case.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__case.isclosed__"
+          ],
+          "false"
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Phone FROM Contact WHERE Department = 'Finance'",
+    "query_toks": [
+      "SELECT",
+      "Phone",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Department",
+      "=",
+      "'Finance",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "phone",
+      "from",
+      "contact",
+      "where",
+      "department",
+      "=",
+      "value"
+    ],
+    "question": "Show me the phone number of all contacts who are in the finance department.",
+    "question_toks": [
+      "Show",
+      "me",
+      "the",
+      "phone",
+      "number",
+      "of",
+      "all",
+      "contacts",
+      "who",
+      "are",
+      "in",
+      "the",
+      "finance",
+      "department",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.phone__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.department__"
+          ],
+          "\"Finance\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Description FROM Document",
+    "query_toks": [
+      "SELECT",
+      "Description",
+      "FROM",
+      "Document"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "description",
+      "from",
+      "document"
+    ],
+    "question": "List the description for each document.",
+    "question_toks": [
+      "List",
+      "the",
+      "description",
+      "for",
+      "each",
+      "document",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "document",
+        "table_unit": "__document__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__document.description__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Description FROM Contact",
+    "query_toks": [
+      "SELECT",
+      "Description",
+      "FROM",
+      "Contact"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "description",
+      "from",
+      "contact"
+    ],
+    "question": "Show the description for all contacts.",
+    "question_toks": [
+      "Show",
+      "the",
+      "description",
+      "for",
+      "all",
+      "contacts",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.description__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Type FROM Account Where Name = 'Acme'",
+    "query_toks": [
+      "SELECT",
+      "Type",
+      "FROM",
+      "Account",
+      "Where",
+      "Name",
+      "=",
+      "'Acme",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "type",
+      "from",
+      "account",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "Is Acme a customer account?",
+    "question_toks": [
+      "Is",
+      "Acme",
+      "a",
+      "customer",
+      "account",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.type__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.name__"
+          ],
+          "\"Acme\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Website FROM Account Where Name = 'Acme'",
+    "query_toks": [
+      "SELECT",
+      "Website",
+      "FROM",
+      "Account",
+      "Where",
+      "Name",
+      "=",
+      "'Acme",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "website",
+      "from",
+      "account",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "What is the account website for Acme?",
+    "question_toks": [
+      "What",
+      "is",
+      "the",
+      "account",
+      "website",
+      "for",
+      "Acme",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.website__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.name__"
+          ],
+          "\"Acme\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Department FROM Contact WHERE Name != 'Bharat Suri'",
+    "query_toks": [
+      "SELECT",
+      "Department",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Name",
+      "!",
+      "=",
+      "'Bharat",
+      "Suri",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "department",
+      "from",
+      "contact",
+      "where",
+      "name",
+      "!",
+      "=",
+      "value"
+    ],
+    "question": "Show me the department name for all contacts except Bharat Suri",
+    "question_toks": [
+      "Show",
+      "me",
+      "the",
+      "department",
+      "name",
+      "for",
+      "all",
+      "contacts",
+      "except",
+      "Bharat",
+      "Suri"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.department__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          6,
+          [
+            0,
+            "__contact.name__"
+          ],
+          "\"Bharat Suri\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Account WHERE BillingCity = 'New York'",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Account",
+      "WHERE",
+      "BillingCity",
+      "=",
+      "'New",
+      "York",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "account",
+      "where",
+      "billingcity",
+      "=",
+      "value"
+    ],
+    "question": "How many accounts are in New York city?",
+    "question_toks": [
+      "How",
+      "many",
+      "accounts",
+      "are",
+      "in",
+      "New",
+      "York",
+      "city",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__account.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.billingcity__"
+          ],
+          "\"New York\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Description FROM Contact WHERE Department = 'Finance'",
+    "query_toks": [
+      "SELECT",
+      "Description",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Department",
+      "=",
+      "'Finance",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "description",
+      "from",
+      "contact",
+      "where",
+      "department",
+      "=",
+      "value"
+    ],
+    "question": "List the finance department contact descriptions.",
+    "question_toks": [
+      "List",
+      "the",
+      "finance",
+      "department",
+      "contact",
+      "descriptions",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.description__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.department__"
+          ],
+          "\"Finance\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Account",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Account"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "account"
+    ],
+    "question": "How many accounts do I have?",
+    "question_toks": [
+      "How",
+      "many",
+      "accounts",
+      "do",
+      "I",
+      "have",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__account.id__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT BillingStreet, BillingState, BillingPostalCode FROM Account",
+    "query_toks": [
+      "SELECT",
+      "BillingStreet",
+      ",",
+      "BillingState",
+      ",",
+      "BillingPostalCode",
+      "FROM",
+      "Account"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "billingstreet",
+      ",",
+      "billingstate",
+      ",",
+      "billingpostalcode",
+      "from",
+      "account"
+    ],
+    "question": "Give me a list of all my account addresses.",
+    "question_toks": [
+      "Give",
+      "me",
+      "a",
+      "list",
+      "of",
+      "all",
+      "my",
+      "account",
+      "addresses",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.billingstreet__"
+          ]
+        ],
+        [
+          0,
+          [
+            0,
+            "__account.billingstate__"
+          ]
+        ],
+        [
+          0,
+          [
+            0,
+            "__account.billingpostalcode__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT AccountId FROM Contact",
+    "query_toks": [
+      "SELECT",
+      "AccountId",
+      "FROM",
+      "Contact"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "accountid",
+      "from",
+      "contact"
+    ],
+    "question": "List the account id for all contacts.",
+    "question_toks": [
+      "List",
+      "the",
+      "account",
+      "id",
+      "for",
+      "all",
+      "contacts",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.accountid__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Contact",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Contact"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "contact"
+    ],
+    "question": "How many contacts are there?",
+    "question_toks": [
+      "How",
+      "many",
+      "contacts",
+      "are",
+      "there",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__contact.id__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Name FROM Account WHERE BillingCountry = 'USA'",
+    "query_toks": [
+      "SELECT",
+      "Name",
+      "FROM",
+      "Account",
+      "WHERE",
+      "BillingCountry",
+      "=",
+      "'USA",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "name",
+      "from",
+      "account",
+      "where",
+      "billingcountry",
+      "=",
+      "value"
+    ],
+    "question": "Show me my accounts based in USA.",
+    "question_toks": [
+      "Show",
+      "me",
+      "my",
+      "accounts",
+      "based",
+      "in",
+      "USA",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.name__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.billingcountry__"
+          ],
+          "\"USA\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Name FROM Account WHERE BillingCity = 'New York'",
+    "query_toks": [
+      "SELECT",
+      "Name",
+      "FROM",
+      "Account",
+      "WHERE",
+      "BillingCity",
+      "=",
+      "'New",
+      "York",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "name",
+      "from",
+      "account",
+      "where",
+      "billingcity",
+      "=",
+      "value"
+    ],
+    "question": "Which account is from New York?",
+    "question_toks": [
+      "Which",
+      "account",
+      "is",
+      "from",
+      "New",
+      "York",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.name__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.billingcity__"
+          ],
+          "\"New York\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT AnnualRevenue FROM Account Where BillingCity = 'San Francisco'",
+    "query_toks": [
+      "SELECT",
+      "AnnualRevenue",
+      "FROM",
+      "Account",
+      "Where",
+      "BillingCity",
+      "=",
+      "'San",
+      "Francisco",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "annualrevenue",
+      "from",
+      "account",
+      "where",
+      "billingcity",
+      "=",
+      "value"
+    ],
+    "question": "Show me the annual revenue for all accounts in San Francisco.",
+    "question_toks": [
+      "Show",
+      "me",
+      "the",
+      "annual",
+      "revenue",
+      "for",
+      "all",
+      "accounts",
+      "in",
+      "San",
+      "Francisco",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.annualrevenue__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.billingcity__"
+          ],
+          "\"San Francisco\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Document WHERE IsPublic = false",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Document",
+      "WHERE",
+      "IsPublic",
+      "=",
+      "false"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "document",
+      "where",
+      "ispublic",
+      "=",
+      "false"
+    ],
+    "question": "Count the number of private records.",
+    "question_toks": [
+      "Count",
+      "the",
+      "number",
+      "of",
+      "private",
+      "records",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "document",
+        "table_unit": "__document__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__document.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__document.ispublic__"
+          ],
+          "false"
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Id FROM Account",
+    "query_toks": [
+      "SELECT",
+      "Id",
+      "FROM",
+      "Account"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "id",
+      "from",
+      "account"
+    ],
+    "question": "Get all the Ids of my accounts",
+    "question_toks": [
+      "Get",
+      "all",
+      "the",
+      "Ids",
+      "of",
+      "my",
+      "accounts"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.id__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT LeadSource FROM Contact WHERE Name = 'Bharat Suri'",
+    "query_toks": [
+      "SELECT",
+      "LeadSource",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Name",
+      "=",
+      "'Bharat",
+      "Suri",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "leadsource",
+      "from",
+      "contact",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "What is the source for the lead on the contact Bharat Suri?",
+    "question_toks": [
+      "What",
+      "is",
+      "the",
+      "source",
+      "for",
+      "the",
+      "lead",
+      "on",
+      "the",
+      "contact",
+      "Bharat",
+      "Suri",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.leadsource__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.name__"
+          ],
+          "\"Bharat Suri\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Name FROM Account WHERE Type = 'Prospect'",
+    "query_toks": [
+      "SELECT",
+      "Name",
+      "FROM",
+      "Account",
+      "WHERE",
+      "Type",
+      "=",
+      "'Prospect",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "name",
+      "from",
+      "account",
+      "where",
+      "type",
+      "=",
+      "value"
+    ],
+    "question": "How many prospect accounts are there?",
+    "question_toks": [
+      "How",
+      "many",
+      "prospect",
+      "accounts",
+      "are",
+      "there",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.name__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.type__"
+          ],
+          "\"Prospect\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Name FROM Account WHERE Type = 'Customer'",
+    "query_toks": [
+      "SELECT",
+      "Name",
+      "FROM",
+      "Account",
+      "WHERE",
+      "Type",
+      "=",
+      "'Customer",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "name",
+      "from",
+      "account",
+      "where",
+      "type",
+      "=",
+      "value"
+    ],
+    "question": "Show me all my customer accounts",
+    "question_toks": [
+      "Show",
+      "me",
+      "all",
+      "my",
+      "customer",
+      "accounts"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.name__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.type__"
+          ],
+          "\"Customer\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Phone FROM Account WHERE Name = 'Acme'",
+    "query_toks": [
+      "SELECT",
+      "Phone",
+      "FROM",
+      "Account",
+      "WHERE",
+      "Name",
+      "=",
+      "'Acme",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "phone",
+      "from",
+      "account",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "How can I contact Acme?",
+    "question_toks": [
+      "How",
+      "can",
+      "I",
+      "contact",
+      "Acme",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.phone__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.name__"
+          ],
+          "\"Acme\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Department,Email FROM Contact",
+    "query_toks": [
+      "SELECT",
+      "Department",
+      ",",
+      "Email",
+      "FROM",
+      "Contact"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "department",
+      ",",
+      "email",
+      "from",
+      "contact"
+    ],
+    "question": "List the emails and departments of all contacts.",
+    "question_toks": [
+      "List",
+      "the",
+      "emails",
+      "and",
+      "departments",
+      "of",
+      "all",
+      "contacts",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.department__"
+          ]
+        ],
+        [
+          0,
+          [
+            0,
+            "__contact.email__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Description FROM Contact WHERE Department = 'Finance'",
+    "query_toks": [
+      "SELECT",
+      "Description",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Department",
+      "=",
+      "'Finance",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "description",
+      "from",
+      "contact",
+      "where",
+      "department",
+      "=",
+      "value"
+    ],
+    "question": "Find the contact descriptions of the finance department.",
+    "question_toks": [
+      "Find",
+      "the",
+      "contact",
+      "descriptions",
+      "of",
+      "the",
+      "finance",
+      "department",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.description__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.department__"
+          ],
+          "\"Finance\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Description FROM Case",
+    "query_toks": [
+      "SELECT",
+      "Description",
+      "FROM",
+      "Case"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "description",
+      "from",
+      "case"
+    ],
+    "question": "Get the description of all cases",
+    "question_toks": [
+      "Get",
+      "the",
+      "description",
+      "of",
+      "all",
+      "cases"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "case",
+        "table_unit": "__case__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__case.description__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT BillingCity FROM Account WHERE Name = 'Acme'",
+    "query_toks": [
+      "SELECT",
+      "BillingCity",
+      "FROM",
+      "Account",
+      "WHERE",
+      "Name",
+      "=",
+      "'Acme",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "billingcity",
+      "from",
+      "account",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "What city is Acme located in?",
+    "question_toks": [
+      "What",
+      "city",
+      "is",
+      "Acme",
+      "located",
+      "in",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.billingcity__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.name__"
+          ],
+          "\"Acme\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Case WHERE IsClosed = false",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Case",
+      "WHERE",
+      "IsClosed",
+      "=",
+      "false"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "case",
+      "where",
+      "isclosed",
+      "=",
+      "false"
+    ],
+    "question": "Describe my open cases.",
+    "question_toks": [
+      "Describe",
+      "my",
+      "open",
+      "cases",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "case",
+        "table_unit": "__case__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__case.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__case.isclosed__"
+          ],
+          "false"
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Name FROM Account WHERE Type = 'Customer'",
+    "query_toks": [
+      "SELECT",
+      "Name",
+      "FROM",
+      "Account",
+      "WHERE",
+      "Type",
+      "=",
+      "'Customer",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "name",
+      "from",
+      "account",
+      "where",
+      "type",
+      "=",
+      "value"
+    ],
+    "question": "How many customer accounts do I have?",
+    "question_toks": [
+      "How",
+      "many",
+      "customer",
+      "accounts",
+      "do",
+      "I",
+      "have",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.name__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.type__"
+          ],
+          "\"Customer\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Keywords FROM Document WHERE Name = 'quip document'",
+    "query_toks": [
+      "SELECT",
+      "Keywords",
+      "FROM",
+      "Document",
+      "WHERE",
+      "Name",
+      "=",
+      "'quip",
+      "document",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "keywords",
+      "from",
+      "document",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "Show me the keywords associated with the document named quip document.",
+    "question_toks": [
+      "Show",
+      "me",
+      "the",
+      "keywords",
+      "associated",
+      "with",
+      "the",
+      "document",
+      "named",
+      "quip",
+      "document",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "document",
+        "table_unit": "__document__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__document.keywords__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__document.name__"
+          ],
+          "\"quip document\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Account Where NumberOfEmployees > 500 AND AnnualRevenue > 100000",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Account",
+      "Where",
+      "NumberOfEmployees",
+      ">",
+      "500",
+      "AND",
+      "AnnualRevenue",
+      ">",
+      "100000"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "account",
+      "where",
+      "numberofemployees",
+      ">",
+      "value",
+      "and",
+      "annualrevenue",
+      ">",
+      "value"
+    ],
+    "question": "How many accounts have more than 500 employees and more than a million annual revenue?",
+    "question_toks": [
+      "How",
+      "many",
+      "accounts",
+      "have",
+      "more",
+      "than",
+      "500",
+      "employees",
+      "and",
+      "more",
+      "than",
+      "a",
+      "million",
+      "annual",
+      "revenue",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__account.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          2,
+          [
+            0,
+            "__account.numberofemployees__"
+          ],
+          500.0
+        ],
+        "and",
+        [
+          false,
+          2,
+          [
+            0,
+            "__account.annualrevenue__"
+          ],
+          100000.0
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Description FROM Contact WHERE Name = 'Bharat Suri'",
+    "query_toks": [
+      "SELECT",
+      "Description",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Name",
+      "=",
+      "'Bharat",
+      "Suri",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "description",
+      "from",
+      "contact",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "What is the contact description of Bharat Suri?",
+    "question_toks": [
+      "What",
+      "is",
+      "the",
+      "contact",
+      "description",
+      "of",
+      "Bharat",
+      "Suri",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.description__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.name__"
+          ],
+          "\"Bharat Suri\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT DeveloperName FROM Document",
+    "query_toks": [
+      "SELECT",
+      "DeveloperName",
+      "FROM",
+      "Document"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "developername",
+      "from",
+      "document"
+    ],
+    "question": "Get the names of developers for all documents.",
+    "question_toks": [
+      "Get",
+      "the",
+      "names",
+      "of",
+      "developers",
+      "for",
+      "all",
+      "documents",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "document",
+        "table_unit": "__document__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__document.developername__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Document",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Document"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "document"
+    ],
+    "question": "How many documents are there?",
+    "question_toks": [
+      "How",
+      "many",
+      "documents",
+      "are",
+      "there",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "document",
+        "table_unit": "__document__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__document.id__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Description FROM Contact WHERE Department = 'Finance'",
+    "query_toks": [
+      "SELECT",
+      "Description",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Department",
+      "=",
+      "'Finance",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "description",
+      "from",
+      "contact",
+      "where",
+      "department",
+      "=",
+      "value"
+    ],
+    "question": "Show the finance department contact descriptions.",
+    "question_toks": [
+      "Show",
+      "the",
+      "finance",
+      "department",
+      "contact",
+      "descriptions",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.description__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.department__"
+          ],
+          "\"Finance\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Account WHERE BillingCity = 'SanFrancisco'",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Account",
+      "WHERE",
+      "BillingCity",
+      "=",
+      "'SanFrancisco",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "account",
+      "where",
+      "billingcity",
+      "=",
+      "value"
+    ],
+    "question": "How many accounts are linked to San Francisco?",
+    "question_toks": [
+      "How",
+      "many",
+      "accounts",
+      "are",
+      "linked",
+      "to",
+      "San",
+      "Francisco",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__account.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.billingcity__"
+          ],
+          "\"SanFrancisco\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT AuthorId FROM Document",
+    "query_toks": [
+      "SELECT",
+      "AuthorId",
+      "FROM",
+      "Document"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "authorid",
+      "from",
+      "document"
+    ],
+    "question": "Show me the id of the author of all documents.",
+    "question_toks": [
+      "Show",
+      "me",
+      "the",
+      "id",
+      "of",
+      "the",
+      "author",
+      "of",
+      "all",
+      "documents",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "document",
+        "table_unit": "__document__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__document.authorid__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Case",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Case"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "case"
+    ],
+    "question": "Show me the number of cases",
+    "question_toks": [
+      "Show",
+      "me",
+      "the",
+      "number",
+      "of",
+      "cases"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "case",
+        "table_unit": "__case__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__case.id__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Account WHERE BillingCity = 'New York'",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Account",
+      "WHERE",
+      "BillingCity",
+      "=",
+      "'New",
+      "York",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "account",
+      "where",
+      "billingcity",
+      "=",
+      "value"
+    ],
+    "question": "How many accounts are in New York?",
+    "question_toks": [
+      "How",
+      "many",
+      "accounts",
+      "are",
+      "in",
+      "New",
+      "York",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__account.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.billingcity__"
+          ],
+          "\"New York\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Lead",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Lead"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "lead"
+    ],
+    "question": "How many leads do I have?",
+    "question_toks": [
+      "How",
+      "many",
+      "leads",
+      "do",
+      "I",
+      "have",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "lead",
+        "table_unit": "__lead__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__lead.id__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Department,Email FROM Contact",
+    "query_toks": [
+      "SELECT",
+      "Department",
+      ",",
+      "Email",
+      "FROM",
+      "Contact"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "department",
+      ",",
+      "email",
+      "from",
+      "contact"
+    ],
+    "question": "List the department name and email address for each contact.",
+    "question_toks": [
+      "List",
+      "the",
+      "department",
+      "name",
+      "and",
+      "email",
+      "address",
+      "for",
+      "each",
+      "contact",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.department__"
+          ]
+        ],
+        [
+          0,
+          [
+            0,
+            "__contact.email__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT BillingCity FROM Account WHERE AnnualRevenue > 1000000",
+    "query_toks": [
+      "SELECT",
+      "BillingCity",
+      "FROM",
+      "Account",
+      "WHERE",
+      "AnnualRevenue",
+      ">",
+      "1000000"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "billingcity",
+      "from",
+      "account",
+      "where",
+      "annualrevenue",
+      ">",
+      "value"
+    ],
+    "question": "Show me the cities that have accounts with annual revenue more than a million.",
+    "question_toks": [
+      "Show",
+      "me",
+      "the",
+      "cities",
+      "that",
+      "have",
+      "accounts",
+      "with",
+      "annual",
+      "revenue",
+      "more",
+      "than",
+      "a",
+      "million",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.billingcity__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          2,
+          [
+            0,
+            "__account.annualrevenue__"
+          ],
+          1000000.0
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT NumberOfEmployees FROM Account WHERE Name = 'Acme'",
+    "query_toks": [
+      "SELECT",
+      "NumberOfEmployees",
+      "FROM",
+      "Account",
+      "WHERE",
+      "Name",
+      "=",
+      "'Acme",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "numberofemployees",
+      "from",
+      "account",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "How many people work at Acme?",
+    "question_toks": [
+      "How",
+      "many",
+      "people",
+      "work",
+      "at",
+      "Acme",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.numberofemployees__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.name__"
+          ],
+          "\"Acme\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Account WHERE Type = 'Customer'",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Account",
+      "WHERE",
+      "Type",
+      "=",
+      "'Customer",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "account",
+      "where",
+      "type",
+      "=",
+      "value"
+    ],
+    "question": "Show me the count of all person accounts.",
+    "question_toks": [
+      "Show",
+      "me",
+      "the",
+      "count",
+      "of",
+      "all",
+      "person",
+      "accounts",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__account.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.type__"
+          ],
+          "\"Customer\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Contact",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Contact"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "contact"
+    ],
+    "question": "Show me the number of contact records.",
+    "question_toks": [
+      "Show",
+      "me",
+      "the",
+      "number",
+      "of",
+      "contact",
+      "records",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__contact.id__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Email,Name,Phone FROM Contact WHERE Department = 'Finance'",
+    "query_toks": [
+      "SELECT",
+      "Email",
+      ",",
+      "Name",
+      ",",
+      "Phone",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Department",
+      "=",
+      "'Finance",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "email",
+      ",",
+      "name",
+      ",",
+      "phone",
+      "from",
+      "contact",
+      "where",
+      "department",
+      "=",
+      "value"
+    ],
+    "question": "Search the name phone number and email of all contacts in the finance department.",
+    "question_toks": [
+      "Search",
+      "the",
+      "name",
+      "phone",
+      "number",
+      "and",
+      "email",
+      "of",
+      "all",
+      "contacts",
+      "in",
+      "the",
+      "finance",
+      "department",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.email__"
+          ]
+        ],
+        [
+          0,
+          [
+            0,
+            "__contact.name__"
+          ]
+        ],
+        [
+          0,
+          [
+            0,
+            "__contact.phone__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.department__"
+          ],
+          "\"Finance\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Name FROM Account",
+    "query_toks": [
+      "SELECT",
+      "Name",
+      "FROM",
+      "Account"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "name",
+      "from",
+      "account"
+    ],
+    "question": "Show me the names of all accounts",
+    "question_toks": [
+      "Show",
+      "me",
+      "the",
+      "names",
+      "of",
+      "all",
+      "accounts"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.name__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Name FROM Lead Where City = 'San Francisco' ",
+    "query_toks": [
+      "SELECT",
+      "Name",
+      "FROM",
+      "Lead",
+      "Where",
+      "City",
+      "=",
+      "'San",
+      "Francisco",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "name",
+      "from",
+      "lead",
+      "where",
+      "city",
+      "=",
+      "value"
+    ],
+    "question": "Which leads are in San Francisco?",
+    "question_toks": [
+      "Which",
+      "leads",
+      "are",
+      "in",
+      "San",
+      "Francisco",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "lead",
+        "table_unit": "__lead__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__lead.name__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__lead.city__"
+          ],
+          "\"San Francisco\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Name FROM Account WHERE AnnualRevenue > 10000000",
+    "query_toks": [
+      "SELECT",
+      "Name",
+      "FROM",
+      "Account",
+      "WHERE",
+      "AnnualRevenue",
+      ">",
+      "10000000"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "name",
+      "from",
+      "account",
+      "where",
+      "annualrevenue",
+      ">",
+      "value"
+    ],
+    "question": "Which of my accounts have revenue more than 10 million?",
+    "question_toks": [
+      "Which",
+      "of",
+      "my",
+      "accounts",
+      "have",
+      "revenue",
+      "more",
+      "than",
+      "10",
+      "million",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.name__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          2,
+          [
+            0,
+            "__account.annualrevenue__"
+          ],
+          10000000.0
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT BillingState FROM Account",
+    "query_toks": [
+      "SELECT",
+      "BillingState",
+      "FROM",
+      "Account"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "billingstate",
+      "from",
+      "account"
+    ],
+    "question": "Show me all account billing states.",
+    "question_toks": [
+      "Show",
+      "me",
+      "all",
+      "account",
+      "billing",
+      "states",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.billingstate__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Document WHERE IsPublic = true",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Document",
+      "WHERE",
+      "IsPublic",
+      "=",
+      "true"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "document",
+      "where",
+      "ispublic",
+      "=",
+      "true"
+    ],
+    "question": "Count the number of public documents.",
+    "question_toks": [
+      "Count",
+      "the",
+      "number",
+      "of",
+      "public",
+      "documents",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "document",
+        "table_unit": "__document__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__document.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__document.ispublic__"
+          ],
+          "true"
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Description FROM Document",
+    "query_toks": [
+      "SELECT",
+      "Description",
+      "FROM",
+      "Document"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "description",
+      "from",
+      "document"
+    ],
+    "question": "List the descriptions of all documents.",
+    "question_toks": [
+      "List",
+      "the",
+      "descriptions",
+      "of",
+      "all",
+      "documents",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "document",
+        "table_unit": "__document__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__document.description__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT BillingCity FROM Account Where Name = 'Acme'",
+    "query_toks": [
+      "SELECT",
+      "BillingCity",
+      "FROM",
+      "Account",
+      "Where",
+      "Name",
+      "=",
+      "'Acme",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "billingcity",
+      "from",
+      "account",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "What is the billing city for Acme account?",
+    "question_toks": [
+      "What",
+      "is",
+      "the",
+      "billing",
+      "city",
+      "for",
+      "Acme",
+      "account",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.billingcity__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.name__"
+          ],
+          "\"Acme\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Name FROM Account WHERE BillingCountry = 'USA'",
+    "query_toks": [
+      "SELECT",
+      "Name",
+      "FROM",
+      "Account",
+      "WHERE",
+      "BillingCountry",
+      "=",
+      "'USA",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "name",
+      "from",
+      "account",
+      "where",
+      "billingcountry",
+      "=",
+      "value"
+    ],
+    "question": "Which of my accounts are based in USA?",
+    "question_toks": [
+      "Which",
+      "of",
+      "my",
+      "accounts",
+      "are",
+      "based",
+      "in",
+      "USA",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.name__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.billingcountry__"
+          ],
+          "\"USA\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Phone FROM Contact",
+    "query_toks": [
+      "SELECT",
+      "Phone",
+      "FROM",
+      "Contact"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "phone",
+      "from",
+      "contact"
+    ],
+    "question": "List the contact numbers of all contacts.",
+    "question_toks": [
+      "List",
+      "the",
+      "contact",
+      "numbers",
+      "of",
+      "all",
+      "contacts",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.phone__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Contact WHERE Department = 'Finance'",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Department",
+      "=",
+      "'Finance",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "contact",
+      "where",
+      "department",
+      "=",
+      "value"
+    ],
+    "question": "What is the number of contacts who are in the finance department?",
+    "question_toks": [
+      "What",
+      "is",
+      "the",
+      "number",
+      "of",
+      "contacts",
+      "who",
+      "are",
+      "in",
+      "the",
+      "finance",
+      "department",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__contact.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.department__"
+          ],
+          "\"Finance\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Phone FROM Account WHERE Name = 'Acme'",
+    "query_toks": [
+      "SELECT",
+      "Phone",
+      "FROM",
+      "Account",
+      "WHERE",
+      "Name",
+      "=",
+      "'Acme",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "phone",
+      "from",
+      "account",
+      "where",
+      "name",
+      "=",
+      "value"
+    ],
+    "question": "What is the phone number of Acme account?",
+    "question_toks": [
+      "What",
+      "is",
+      "the",
+      "phone",
+      "number",
+      "of",
+      "Acme",
+      "account",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.phone__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.name__"
+          ],
+          "\"Acme\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Account WHERE AnnualRevenue < 1000000",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Account",
+      "WHERE",
+      "AnnualRevenue",
+      "<",
+      "1000000"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "account",
+      "where",
+      "annualrevenue",
+      "<",
+      "value"
+    ],
+    "question": "How many accounts have annual revenue less than a million?",
+    "question_toks": [
+      "How",
+      "many",
+      "accounts",
+      "have",
+      "annual",
+      "revenue",
+      "less",
+      "than",
+      "a",
+      "million",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__account.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          3,
+          [
+            0,
+            "__account.annualrevenue__"
+          ],
+          1000000.0
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Contact WHERE Department != ''",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Department",
+      "!",
+      "=",
+      "``"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "contact",
+      "where",
+      "department",
+      "!",
+      "=",
+      "``"
+    ],
+    "question": "How many contacts have a department?",
+    "question_toks": [
+      "How",
+      "many",
+      "contacts",
+      "have",
+      "a",
+      "department",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__contact.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          6,
+          [
+            0,
+            "__contact.department__"
+          ],
+          "\"\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Department,Description,Email FROM Contact",
+    "query_toks": [
+      "SELECT",
+      "Department",
+      ",",
+      "Description",
+      ",",
+      "Email",
+      "FROM",
+      "Contact"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "department",
+      ",",
+      "description",
+      ",",
+      "email",
+      "from",
+      "contact"
+    ],
+    "question": "What is the name description and email of all contacts?",
+    "question_toks": [
+      "What",
+      "is",
+      "the",
+      "name",
+      "description",
+      "and",
+      "email",
+      "of",
+      "all",
+      "contacts",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.department__"
+          ]
+        ],
+        [
+          0,
+          [
+            0,
+            "__contact.description__"
+          ]
+        ],
+        [
+          0,
+          [
+            0,
+            "__contact.email__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Account WHERE Type = 'Customer'",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Account",
+      "WHERE",
+      "Type",
+      "=",
+      "'Customer",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "account",
+      "where",
+      "type",
+      "=",
+      "value"
+    ],
+    "question": "How many customer accounts do we have?",
+    "question_toks": [
+      "How",
+      "many",
+      "customer",
+      "accounts",
+      "do",
+      "we",
+      "have",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__account.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.type__"
+          ],
+          "\"Customer\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Name FROM Account",
+    "query_toks": [
+      "SELECT",
+      "Name",
+      "FROM",
+      "Account"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "name",
+      "from",
+      "account"
+    ],
+    "question": "Show me all account names.",
+    "question_toks": [
+      "Show",
+      "me",
+      "all",
+      "account",
+      "names",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.name__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Name FROM Contact WHERE Department = 'Finance'",
+    "query_toks": [
+      "SELECT",
+      "Name",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Department",
+      "=",
+      "'Finance",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "name",
+      "from",
+      "contact",
+      "where",
+      "department",
+      "=",
+      "value"
+    ],
+    "question": "Show me the names of all contacts in the finance department.",
+    "question_toks": [
+      "Show",
+      "me",
+      "the",
+      "names",
+      "of",
+      "all",
+      "contacts",
+      "in",
+      "the",
+      "finance",
+      "department",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.name__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.department__"
+          ],
+          "\"Finance\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Account WHERE NumberOfEmployees > 500",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Account",
+      "WHERE",
+      "NumberOfEmployees",
+      ">",
+      "500"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "account",
+      "where",
+      "numberofemployees",
+      ">",
+      "value"
+    ],
+    "question": "How many accounts have more than 500 employees?",
+    "question_toks": [
+      "How",
+      "many",
+      "accounts",
+      "have",
+      "more",
+      "than",
+      "500",
+      "employees",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__account.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          2,
+          [
+            0,
+            "__account.numberofemployees__"
+          ],
+          500.0
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT BillingCity FROM Account WHERE AnnualRevenue > 1000000",
+    "query_toks": [
+      "SELECT",
+      "BillingCity",
+      "FROM",
+      "Account",
+      "WHERE",
+      "AnnualRevenue",
+      ">",
+      "1000000"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "billingcity",
+      "from",
+      "account",
+      "where",
+      "annualrevenue",
+      ">",
+      "value"
+    ],
+    "question": "Which cities are the accounts with annual revenue more than a million from?",
+    "question_toks": [
+      "Which",
+      "cities",
+      "are",
+      "the",
+      "accounts",
+      "with",
+      "annual",
+      "revenue",
+      "more",
+      "than",
+      "a",
+      "million",
+      "from",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__account.billingcity__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          2,
+          [
+            0,
+            "__account.annualrevenue__"
+          ],
+          1000000.0
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Contact WHERE Department = 'Finance'",
+    "query_toks": [
+      "SELECT",
+      "count",
+      "(",
+      "id",
+      ")",
+      "FROM",
+      "Contact",
+      "WHERE",
+      "Department",
+      "=",
+      "'Finance",
+      "'"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "contact",
+      "where",
+      "department",
+      "=",
+      "value"
+    ],
+    "question": "How many contacts are in the Finance department?",
+    "question_toks": [
+      "How",
+      "many",
+      "contacts",
+      "are",
+      "in",
+      "the",
+      "Finance",
+      "department",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__contact.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.department__"
+          ],
+          "\"Finance\""
+        ]
+      ]
+    }
+  }
+]

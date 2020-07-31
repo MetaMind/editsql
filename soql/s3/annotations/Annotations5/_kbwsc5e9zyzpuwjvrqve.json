@@ -1,0 +1,1 @@
+{"question":"Show me the number of contact records.","query":"SELECT count() FROM Contact","sObject":"Contact","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

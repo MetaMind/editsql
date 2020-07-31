@@ -1,0 +1,1 @@
+{"question":"Show me the annual revenue of the accounts in California.","query":"SELECT AnnualRevenue FROM Account Where BillingState='California'","sObject":"Account","fields":["Name"],"order_by":"AnnualRevenue","orderby_sort":"DESC","nulls":"FIRST","max_records":"1","filters":[]}

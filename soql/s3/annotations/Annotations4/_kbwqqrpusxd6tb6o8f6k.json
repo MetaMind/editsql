@@ -1,0 +1,1 @@
+{"question":"How many of my accounts are based out of USA?","query":"SELECT count() FROM Account WHERE BillingCountry !='USA'","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

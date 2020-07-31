@@ -1,0 +1,1 @@
+{"question":"Search the finance department for contact descriptions.","query":"SELECT Description FROM Contact WHERE Department = 'Finance'","sObject":"Contact","fields":["Description"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"Department","op":"=","value":"Finance"}]}

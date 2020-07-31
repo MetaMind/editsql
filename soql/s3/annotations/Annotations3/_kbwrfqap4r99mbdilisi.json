@@ -1,0 +1,1 @@
+{"question":"Show me all account billing states.","query":"SELECT BillingState FROM Account","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

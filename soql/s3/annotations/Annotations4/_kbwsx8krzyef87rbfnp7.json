@@ -1,0 +1,1 @@
+{"question":"Show me the document descriptions created by Bharat Suri.","query":"SELECT Description FROM Document WHERE Author.Name = 'Bharat Suri'","sObject":"Document","fields":["Description"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

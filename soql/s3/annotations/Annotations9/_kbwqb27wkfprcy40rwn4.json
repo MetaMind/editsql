@@ -1,0 +1,1 @@
+{"question":"What is the description for each contact?","query":"SELECT Description FROM Contact","sObject":"Contact","fields":["Description"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

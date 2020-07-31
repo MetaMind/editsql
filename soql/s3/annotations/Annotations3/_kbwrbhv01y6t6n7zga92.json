@@ -1,0 +1,1 @@
+{"question":"Show me all my account addresses.","query":"SELECT BillingStreet, BillingState, BillingPostalCode FROM Account","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

@@ -1,0 +1,1 @@
+{"question":"Show me the description of Acme account.","query":"SELECT Description FROM Account WHERE Name = 'Acme'","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

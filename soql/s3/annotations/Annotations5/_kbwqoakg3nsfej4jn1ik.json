@@ -1,0 +1,1 @@
+{"question":"Show me all contact departments that are not empty.","query":"SELECT Department FROM Contact WHERE Department != ''''","sObject":"Contact","fields":["Department"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"Department","op":"!=","value":"''"}]}

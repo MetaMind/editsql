@@ -1,0 +1,1 @@
+{"question":"Describe my open cases.","query":"SELECT count() FROM Case WHERE IsClosed = false","sObject":"Case","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"IsClosed","op":"=","value":"false"}]}

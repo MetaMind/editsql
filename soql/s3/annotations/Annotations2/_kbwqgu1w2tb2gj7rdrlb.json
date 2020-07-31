@@ -1,0 +1,1 @@
+{"question":"Show me the contact number of contact Bharat Suri.","query":"SELECT Phone FROM Contact WHERE Name = 'Bharat Suri'","sObject":"Contact","fields":["Phone"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"Name","op":"=","value":"Bharat Suri"}]}

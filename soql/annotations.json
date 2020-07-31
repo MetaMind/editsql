@@ -1,0 +1,3092 @@
+[
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "IsPublic",
+        "op": "!=",
+        "value": "true"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Document WHERE IsPublic != true",
+    "question": "Count the number of documents that are not public.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "IsPublic",
+        "op": "=",
+        "value": "true"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Document WHERE IsPublic = true",
+    "question": "How many documents are public?",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "Type"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name,Type FROM Account WHERE Name = 'Dickenson plc'",
+    "question": "What's the type of Account Dickenson plc",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "AuthorId"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Author.Name FROM Document",
+    "question": "What is the name of the author for each document?",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "AccountId"
+    ],
+    "filters": [
+      {
+        "field": "Name",
+        "op": "=",
+        "value": "Bharat Suri"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT AccountId FROM Contact WHERE Name = 'Bharat Suri'",
+    "question": "What is the account id for contact Bharat Suri?",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account WHERE BillingCountry = 'USA'",
+    "question": "How many of my accounts are based out of USA?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Contact WHERE Department = 'Finance'",
+    "question": "Show me a count of the contacts in the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Phone FROM Account WHERE Name = 'Acme'",
+    "question": "What is the contact number for account Acme?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Phone FROM Account WHERE Name = 'Acme'",
+    "question": "What is the phone number for account Acme?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Department"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "!=",
+        "value": "''"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Department FROM Contact WHERE Department != ''",
+    "question": "Show me all contact departments that are not empty.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account WHERE Industry = 'Technology'",
+    "question": "How many accounts are related to technology industry?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Contact WHERE Department = 'Finance'",
+    "question": "Show me the names of all contacts who are in the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "AuthorId"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT AuthorId FROM Document",
+    "question": "List the account id for all documents.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Document",
+    "question": "Describe all documents.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account WHERE Type = 'Customer'",
+    "question": "How many customer accounts are there?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Contact WHERE Department = 'Finance'",
+    "question": "List the names of all contacts in the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account",
+    "question": "Show me the account names.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Email",
+      "Name",
+      "Phone"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Email,Name,Phone FROM Contact WHERE Department = 'Finance'",
+    "question": "Find the name email and number of all finance department contacts.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "1",
+    "nulls": "FIRST",
+    "order_by": "AnnualRevenue",
+    "orderby_sort": "DESC",
+    "query": "SELECT count() FROM Account Where BillingState = 'CA'",
+    "question": "How many accounts are in California?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "AccountId"
+    ],
+    "filters": [
+      {
+        "field": "Name",
+        "op": "=",
+        "value": "Bharat Suri"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT AccountId FROM Contact WHERE Name = 'Bharat Suri'",
+    "question": "What is the account id for Bharat Suri?",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "AuthorId"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT AuthorId FROM Document",
+    "question": "List the author id for each document.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "LeadSource"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT LeadSource FROM Contact WHERE Department = 'Finance'",
+    "question": "List the lead sources for all finance department contacts.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "FirstName"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT FirstName FROM Lead",
+    "question": "Show me the first names of all leads",
+    "sObject": "Lead"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Case",
+    "question": "Count the number of all cases",
+    "sObject": "Case"
+  },
+  {
+    "fields": [
+      "Phone"
+    ],
+    "filters": [
+      {
+        "field": "BillingCity",
+        "op": "=",
+        "value": "SanFrancisco"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Phone FROM Account WHERE Name = 'Acme'",
+    "question": "How do I contact Acme account?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "DeveloperName"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT DeveloperName FROM Document",
+    "question": "List the developer name for each document.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "IsClosed",
+        "op": "=",
+        "value": "false"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Case WHERE IsClosed = false",
+    "question": "How many cases are open?",
+    "sObject": "Case"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Document",
+    "question": "Count the number of documents.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE BillingCountry != 'USA'",
+    "question": "Which of my accounts are based out of USA?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account",
+    "question": "Show me the count of all accounts.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Contact",
+    "question": "Count the number of contact records.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Phone"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Phone FROM Contact WHERE Department = 'Finance'",
+    "question": "List the phone numbers of all contacts in the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingCity FROM Account",
+    "question": "Show me all account billing cities.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Phone"
+    ],
+    "filters": [
+      {
+        "field": "Name",
+        "op": "=",
+        "value": "Bharat Suri"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Phone FROM Contact WHERE Name = 'Bharat Suri'",
+    "question": "Show me the contact number of contact Bharat Suri.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "IsPublic",
+        "op": "=",
+        "value": "true"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Document WHERE IsPublic = true",
+    "question": "How many public documents are there?",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "Phone"
+    ],
+    "filters": [
+      {
+        "field": "BillingCity",
+        "op": "=",
+        "value": "SanFrancisco"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Phone FROM Account WHERE Name = 'Acme'",
+    "question": "Show me the contact for the account Acme.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Contact",
+    "question": "What is the description for each contact?",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "IsEscalated",
+        "op": "=",
+        "value": "true"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Case WHERE IsEscalated = true",
+    "question": "How many cases have been escalated",
+    "sObject": "Case"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Case",
+    "question": "How many cases are there",
+    "sObject": "Case"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingStreet, BillingState, BillingPostalCode FROM Account WHERE Name = 'Acme'",
+    "question": "Show me the address of Acme account",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Document WHERE Author.Name = 'Bharat Suri'",
+    "question": "Show me the document descriptions created by Bharat Suri.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "Phone"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Phone FROM Contact WHERE Department = 'Finance'",
+    "question": "Show me the phone number of all contacts who are in the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Industry FROM Account",
+    "question": "Show me the industry of all my accounts.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Count() FROM Account WHERE Type = 'Customer'",
+    "question": "How many accounts of type customer are there?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Document",
+    "question": "List the description for each document.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Phone FROM Account WHERE Name = 'Acme'",
+    "question": "What is the contact for Acme?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Contact",
+    "question": "Show the description for all contacts.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "1",
+    "nulls": "FIRST",
+    "order_by": "AnnualRevenue",
+    "orderby_sort": "DESC",
+    "query": "SELECT Type FROM Account Where Name = 'Acme'",
+    "question": "Is Acme a customer account?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Department",
+      "Email"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Department,Email FROM Contact",
+    "question": "Show me the department and email of all contacts",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "AccountId"
+    ],
+    "filters": [
+      {
+        "field": "IsClosed",
+        "op": "=",
+        "value": "false"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT AccountId, CaseNumber, Comments FROM Case",
+    "question": "Show me account id, comments, and case numbers",
+    "sObject": "Case"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account WHERE Type = 'Customer'",
+    "question": "What is the number of customer accounts?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Contact WHERE Department = 'Finance'",
+    "question": "Show me the finance department contact names.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Website FROM Account Where Name = 'Acme'",
+    "question": "What is the account website for Acme?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "1",
+    "nulls": "FIRST",
+    "order_by": "AnnualRevenue",
+    "orderby_sort": "DESC",
+    "query": "SELECT AnnualRevenue FROM Account Where BillingCity = 'New York'",
+    "question": "Show me the annual revenue for all accounts in New York.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Department"
+    ],
+    "filters": [
+      {
+        "field": "Name",
+        "op": "!=",
+        "value": "Bharat Suri"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Department FROM Contact WHERE Name != 'Bharat Suri'",
+    "question": "Show me the department name for all contacts except Bharat Suri",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Department"
+    ],
+    "filters": [
+      {
+        "field": "Name",
+        "op": "=",
+        "value": "Bharat Suri"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Department FROM Contact WHERE Name = 'Bharat Suri'",
+    "question": "Show me the department name of Bharat Suri.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "NumberOfEmployees"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT NumberOfEmployees FROM Account WHERE Name = 'Acme'",
+    "question": "What is the number of employees in Acme?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Contact",
+    "question": "Count the number of contacts.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Contact WHERE Department = 'Finance'",
+    "question": "Find the contact names for the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account WHERE BillingCity = 'New York'",
+    "question": "How many accounts are in New York city?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "AccountId"
+    ],
+    "filters": [
+      {
+        "field": "IsClosed",
+        "op": "=",
+        "value": "false"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT AccountId FROM Case",
+    "question": "List the id of accounts for my cases",
+    "sObject": "Case"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Contact WHERE Department = 'Finance'",
+    "question": "List the finance department contact descriptions.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingCountry FROM Account",
+    "question": "Show me all account billing countries.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingCity FROM Account",
+    "question": "Show me the account cities.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Account WHERE Name = 'Acme'",
+    "question": "Show me the description of Acme account.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account",
+    "question": "How many accounts do I have?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingStreet, BillingState, BillingPostalCode FROM Account",
+    "question": "Give me a list of all my account addresses.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "AccountId"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT AccountId FROM Contact",
+    "question": "List the account id for all contacts.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "1",
+    "nulls": "FIRST",
+    "order_by": "AnnualRevenue",
+    "orderby_sort": "DESC",
+    "query": "SELECT Name FROM Account Where NumberOfEmployees > 500",
+    "question": "Which of my accounts have more than 500 employees?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Contact",
+    "question": "How many contacts are there?",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Contact WHERE Department = 'Finance'",
+    "question": "Show me the contact descriptions of the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "AccountId"
+    ],
+    "filters": [
+      {
+        "field": "IsClosed",
+        "op": "=",
+        "value": "false"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Comments FROM Case WHERE IsClosed = true",
+    "question": "Get me the comments on my closed cases",
+    "sObject": "Case"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE BillingCountry = 'USA'",
+    "question": "Show me my accounts based in USA.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE AnnualRevenue < 1000000",
+    "question": "Which accounts have annual revenue less than a million?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE BillingCity = 'New York'",
+    "question": "Which account is from New York?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "1",
+    "nulls": "FIRST",
+    "order_by": "AnnualRevenue",
+    "orderby_sort": "DESC",
+    "query": "SELECT AnnualRevenue FROM Account Where BillingCity = 'San Francisco'",
+    "question": "Show me the annual revenue for all accounts in San Francisco.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "IsPublic",
+        "op": "=",
+        "value": "false"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Document WHERE IsPublic = false",
+    "question": "Count the number of private records.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "LeadSource"
+    ],
+    "filters": [
+      {
+        "field": "Name",
+        "op": "=",
+        "value": "Bharat Suri"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT LeadSource FROM Contact WHERE Name = 'Bharat Suri'",
+    "question": "Show me the lead source for contact Bharat Suri.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Id"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Id FROM Account",
+    "question": "Get all the Ids of my accounts",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "LeadSource"
+    ],
+    "filters": [
+      {
+        "field": "Name",
+        "op": "=",
+        "value": "Bharat Suri"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT LeadSource FROM Contact WHERE Name = 'Bharat Suri'",
+    "question": "What is the source for the lead on the contact Bharat Suri?",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "1",
+    "nulls": "FIRST",
+    "order_by": "AnnualRevenue",
+    "orderby_sort": "DESC",
+    "query": "SELECT AnnualRevenue FROM Account Where BillingState = 'California'",
+    "question": "Show me the annual revenue of the accounts in California.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Document",
+    "question": "How many documents are there in the database?",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [
+      {
+        "field": "Name",
+        "op": "!=",
+        "value": "Bharat Suri"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Contact WHERE Name != 'Bharat Suri'",
+    "question": "Show me the descriptions of all contacts except Bharat Suri.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE Type = 'Prospect'",
+    "question": "How many prospect accounts are there?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE Type = 'Customer'",
+    "question": "Show me all my customer accounts",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "BillingCity"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingCity FROM Account",
+    "question": "What are the billing cities of all accounts",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "FirstName",
+      "LastName"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT FirstName,LastName FROM Contact WHERE Department = 'Finance'",
+    "question": "Show me the first and last name for each finance department contact.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "LastName"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT LastName FROM Lead",
+    "question": "Show me the last names of all my leads",
+    "sObject": "Lead"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Phone FROM Account WHERE Name = 'Acme'",
+    "question": "How can I contact Acme?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "1",
+    "nulls": "FIRST",
+    "order_by": "AnnualRevenue",
+    "orderby_sort": "DESC",
+    "query": "SELECT count() FROM Account Where NumberOfEmployees < 500 OR AnnualRevenue < 100000",
+    "question": "How many accounts have less than 500 employees or less than a million annual revenue?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Department",
+      "Email"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Department,Email FROM Contact",
+    "question": "List the emails and departments of all contacts.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Contact WHERE Department = 'Finance'",
+    "question": "Find the contact descriptions of the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "AccountId"
+    ],
+    "filters": [
+      {
+        "field": "IsClosed",
+        "op": "=",
+        "value": "false"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Case",
+    "question": "Get the description of all cases",
+    "sObject": "Case"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingCity FROM Account WHERE Name = 'Acme'",
+    "question": "What city is Acme located in?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "CaseNumber"
+    ],
+    "filters": [
+      {
+        "field": "IsEscalated",
+        "op": "=",
+        "value": "true"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT CaseNumber FROM Case WHERE IsEscalated = true",
+    "question": "Show me the case number for escalated cases",
+    "sObject": "Case"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "IsClosed",
+        "op": "=",
+        "value": "false"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Case WHERE IsClosed = false",
+    "question": "Describe my open cases.",
+    "sObject": "Case"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "IsClosed",
+        "op": "=",
+        "value": "false"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Case WHERE IsClosed = false",
+    "question": "How many open cases are there?",
+    "sObject": "Case"
+  },
+  {
+    "fields": [
+      "Phone"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Phone FROM Contact WHERE Department = 'Finance'",
+    "question": "Get me the contact number of all contacts in the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "1",
+    "nulls": "FIRST",
+    "order_by": "AnnualRevenue",
+    "orderby_sort": "DESC",
+    "query": "SELECT Name FROM Account ORDER BY AnnualRevenue DESC NULLS FIRST LIMIT 1",
+    "question": "Which is my most profitable account?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE Type = 'Customer'",
+    "question": "How many customer accounts do I have?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingCity FROM Account WHERE Name = 'Acme'",
+    "question": "What city is Acme in?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Keywords"
+    ],
+    "filters": [
+      {
+        "field": "Name",
+        "op": "=",
+        "value": "quip document"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Keywords FROM Document WHERE Name = 'quip document'",
+    "question": "Show me the keywords associated with the document named quip document.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "1",
+    "nulls": "FIRST",
+    "order_by": "AnnualRevenue",
+    "orderby_sort": "DESC",
+    "query": "SELECT count() FROM Account Where NumberOfEmployees > 500 AND AnnualRevenue > 100000",
+    "question": "How many accounts have more than 500 employees and more than a million annual revenue?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "FirstName",
+      "LastName"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT FirstName,LastName FROM Contact WHERE Department = 'Finance'",
+    "question": "Find me the first and last name for all finance department contacts.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Email"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Email FROM Contact",
+    "question": "Show me the email of all contacts.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Id"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Id FROM Account",
+    "question": "Get me the account ids of all accounts.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [
+      {
+        "field": "Name",
+        "op": "=",
+        "value": "Bharat Suri"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Contact WHERE Name = 'Bharat Suri'",
+    "question": "What is the contact description of Bharat Suri?",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "DeveloperName"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT DeveloperName FROM Document",
+    "question": "Get the names of developers for all documents.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "FirstName",
+      "LastName"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT FirstName,LastName FROM Contact WHERE Department = 'Finance'",
+    "question": "Show me the first and last names of all contacts who are in the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE AnnualRevenue > 1000000",
+    "question": "How many accounts have annual revenue more than 1 million?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "NumberOfEmployees"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT NumberOfEmployees FROM Account WHERE Name = 'Acme'",
+    "question": "What is the number of employees at 'Acme'?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [
+      {
+        "field": "BillingCity",
+        "op": "=",
+        "value": "SanFrancisco"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Account WHERE BillingCity = 'San Francisco'",
+    "question": "Show me the descriptions of my accounts linked to San Francisco.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Lead",
+    "question": "Show me the number of leads.",
+    "sObject": "Lead"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Document WHERE Author.Name = 'Bharat Suri'",
+    "question": "Show me the document descriptions written by Bharat Suri",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "NumberOfEmployees"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Account WHERE Name = 'Acme'",
+    "question": "What is the description of Acme?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Document",
+    "question": "How many documents are there?",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Contact WHERE Department = 'Finance'",
+    "question": "Show the finance department contact descriptions.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account",
+    "question": "Show me the number of accounts",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [
+      {
+        "field": "BillingCity",
+        "op": "=",
+        "value": "SanFrancisco"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE BillingCity = 'SanFrancisco'",
+    "question": "Which accounts are in SanFrancisco?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingStreet, BillingState, BillingPostalCode FROM Account",
+    "question": "Show me all my account addresses.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "BillingCity",
+        "op": "=",
+        "value": "SanFrancisco"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account WHERE BillingCity = 'SanFrancisco'",
+    "question": "How many accounts are linked to San Francisco?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "IsPublic",
+        "op": "!=",
+        "value": "false"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Document WHERE IsPublic != false",
+    "question": "Count the number of documents that are not private.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "AuthorId"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT AuthorId FROM Document",
+    "question": "Show me the id of the author of all documents.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingPostalCode FROM Account Where Name = 'Acme'",
+    "question": "What is the zip code of my account Acme?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Case",
+    "question": "Count the total number of cases. ",
+    "sObject": "Case"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Case",
+    "question": "Show me the number of cases",
+    "sObject": "Case"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "IsPublic",
+        "op": "=",
+        "value": "false"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Document WHERE IsPublic = true",
+    "question": "Count the number of public records.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account WHERE BillingCity = 'New York'",
+    "question": "How many accounts are in New York?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Lead",
+    "question": "How many leads do I have?",
+    "sObject": "Lead"
+  },
+  {
+    "fields": [
+      "AuthorId"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Author.Name FROM Document",
+    "question": "Show me the author name for each document.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "Department",
+      "Email"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Department,Email FROM Contact",
+    "question": "List the department name and email address for each contact.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Contact WHERE Department = 'Finance'",
+    "question": "Search the finance department for contact descriptions.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingCity FROM Account WHERE Name = 'Acme'",
+    "question": "Where is Acme located?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingCity FROM Account WHERE AnnualRevenue > 1000000",
+    "question": "Show me the cities that have accounts with annual revenue more than a million.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account",
+    "question": "Show me the names of my accounts",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Document WHERE Author.Name = 'Bharat Suri'",
+    "question": "Show me the count of documents created by Bharat Suri.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE AnnualRevenue < 1000000",
+    "question": "Show me the names of all accounts which have annual revenue less than a million.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "NumberOfEmployees"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT NumberOfEmployees FROM Account WHERE Name = 'Acme'",
+    "question": "How many people work at Acme?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Contact WHERE Department = 'Finance'",
+    "question": "What is the description of each contact in the finance department?",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Lead",
+    "question": "Show me the names of all my leads.",
+    "sObject": "Lead"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account WHERE Type = 'Customer'",
+    "question": "Show me the count of all person accounts.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Contact",
+    "question": "Show me the number of contact records.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account WHERE AnnualRevenue > 1000000",
+    "question": "How many accounts have annual revenue more than a million?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Email",
+      "Name",
+      "Phone"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Email,Name,Phone FROM Contact WHERE Department = 'Finance'",
+    "question": "Search the name phone number and email of all contacts in the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Department",
+      "Email"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Department,Email FROM Contact",
+    "question": "Show me the emails and departments of all contacts.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE BillingCity = 'New York'",
+    "question": "Which accounts are in New York city?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Account",
+    "question": "Show me the description of all my accounts.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE BillingCity = 'New York'",
+    "question": "Which of my accounts are located in New York?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "AccountId"
+    ],
+    "filters": [
+      {
+        "field": "IsClosed",
+        "op": "=",
+        "value": "false"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Comments FROM Case WHERE IsClosed = false",
+    "question": "Get me the comments on my open cases",
+    "sObject": "Case"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account",
+    "question": "Show me the names of all accounts",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Lead Where City = 'San Francisco' ",
+    "question": "Which leads are in San Francisco?",
+    "sObject": "Lead"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [
+      {
+        "field": "BillingCity",
+        "op": "=",
+        "value": "SanFrancisco"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE BillingCity = 'San Francisco'",
+    "question": "Which accounts are in San Francisco?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Department",
+      "Description",
+      "Email"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Department,Description,Email FROM Contact",
+    "question": "Show me the name description and email address of all contacts.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "NumberOfEmployees"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT NumberOfEmployees FROM Account",
+    "question": "Show me the number of employees in all accounts",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [
+      {
+        "field": "BillingCity",
+        "op": "=",
+        "value": "SanFrancisco"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Account",
+    "question": "Show me the description of all my accounts",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE AnnualRevenue > 1000000",
+    "question": "Which accounts have annual revenue more than a million?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account WHERE AnnualRevenue > 10000.0",
+    "question": "How many accounts have annual revenue more than 10000 dollars?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "LeadSource"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT LeadSource FROM Contact WHERE Department = 'Finance'",
+    "question": "Show me the lead source for all contacts in the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "AnnualRevenue"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE AnnualRevenue > 10000000",
+    "question": "Which of my accounts have revenue more than 10 million?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingState FROM Account",
+    "question": "Show me all account billing states.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Email",
+      "Phone"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Email,Phone FROM Contact WHERE Department = 'Finance'",
+    "question": "How can I reach out to all the contacts in the finance department?",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "IsPublic",
+        "op": "=",
+        "value": "true"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Document WHERE IsPublic = true",
+    "question": "Count the number of public documents.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "Description"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Document",
+    "question": "List the descriptions of all documents.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Document WHERE Author.Name = 'Bharat Suri'",
+    "question": "How many documents have been added by Bharat Suri?",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Account",
+    "question": "Show me the account descriptions.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE BillingCity = 'New York'",
+    "question": "Which of my accounts are based out of New York city?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Contact WHERE Department = 'Finance'",
+    "question": "Count the number of contact records in the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account",
+    "question": "Show me the names of all my accounts.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "1",
+    "nulls": "FIRST",
+    "order_by": "AnnualRevenue",
+    "orderby_sort": "DESC",
+    "query": "SELECT BillingCity FROM Account Where Name = 'Acme'",
+    "question": "What is the billing city for Acme account?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Contact WHERE Department = 'Finance'",
+    "question": "Count the number of contacts in the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Email",
+      "Name",
+      "Phone"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Email,Name,Phone FROM Contact WHERE Department = 'Finance'",
+    "question": "List the name phone and email of all contacts in the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE BillingCountry = 'USA'",
+    "question": "Which of my accounts are based in USA?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account",
+    "question": "How many accounts",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "AnnualRevenue"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE AnnualRevenue > 10000000",
+    "question": "How many accounts have revenue greater than 10 million?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingCity FROM Account",
+    "question": "Show me all account cities.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "NumberOfEmployees"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT NumberOfEmployees FROM Account WHERE Name = 'Acme'",
+    "question": "How many employees work at Acme?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Phone"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Phone FROM Contact",
+    "question": "List the contact numbers of all contacts.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Contact WHERE Department = 'Finance'",
+    "question": "What is the number of contacts who are in the finance department?",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Department"
+    ],
+    "filters": [
+      {
+        "field": "Name",
+        "op": "=",
+        "value": "Bharat Suri"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Department FROM Contact WHERE Name = 'Bharat Suri'",
+    "question": "Which department is Bharat Suri in?",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account WHERE AnnualRevenue > 1000000 AND BillingCity = 'New York'",
+    "question": "How many accounts are in New York and have annual revenue more than a million?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Website FROM Account ",
+    "question": "Show me all my account websites",
+    "sObject": "Account"
+  },
+  {
+    "question": "Show me the name and annual revenue of the account with the maximum annual revenue.",
+    "query": "SELECT Name, AnnualRevenue FROM Account ORDER BY AnnualRevenue DESC NULLS Last LIMIT 1"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT AnnualRevenue FROM Account",
+    "question": "Show me the account annual revenues.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "IsPublic",
+        "op": "=",
+        "value": "false"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Document WHERE IsPublic = false",
+    "question": "How many documents are private?",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "Keywords"
+    ],
+    "filters": [
+      {
+        "field": "Name",
+        "op": "=",
+        "value": "quip document"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Keywords FROM Document WHERE Name = 'quip document'",
+    "question": "List the keywords associated with the document names quip document.",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "Keywords"
+    ],
+    "filters": [
+      {
+        "field": "Name",
+        "op": "=",
+        "value": "quip document"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Keywords FROM Document WHERE Name = 'quip document'",
+    "question": "What are the keywords for the document named quip document?",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "Phone"
+    ],
+    "filters": [
+      {
+        "field": "BillingCity",
+        "op": "=",
+        "value": "SanFrancisco"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Phone FROM Account WHERE Name = 'Acme'",
+    "question": "What is the phone number of Acme account?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account WHERE AnnualRevenue < 1000000",
+    "question": "How many accounts have annual revenue less than a million?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Contact WHERE Department != ''",
+    "question": "How many contacts have a department?",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingCity FROM Account WHERE Name = 'Acme'",
+    "question": "Show me the location of Acme account.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Account",
+    "question": "Give me the details on all my accounts.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Department",
+      "Description",
+      "Email"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Department,Description,Email FROM Contact",
+    "question": "What is the name description and email of all contacts?",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Account WHERE Type = 'Customer'",
+    "question": "How many customer accounts do we have?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Author.Name FROM Document WHERE Name = 'Quip Document'",
+    "question": "Who is the author for the document names quip document?",
+    "sObject": "Document"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account WHERE BillingCity = 'New York'",
+    "question": "Which accounts are in New York?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Account",
+    "question": "Show me all account names.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "NumberOfEmployees"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT AnnualRevenue FROM Account WHERE Name = 'Acme'",
+    "question": "What is the annual revenue of Acme?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Department",
+      "Email"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Department,Email FROM Contact",
+    "question": "What is the department name and contact email for all contacts?",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Name FROM Contact WHERE Department = 'Finance'",
+    "question": "Show me the names of all contacts in the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Name"
+    ],
+    "filters": [],
+    "max_records": "1",
+    "nulls": "FIRST",
+    "order_by": "AnnualRevenue",
+    "orderby_sort": "DESC",
+    "query": "SELECT count() FROM Account WHERE NumberOfEmployees > 500",
+    "question": "How many accounts have more than 500 employees?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "Email",
+      "Phone"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Email,Phone FROM Contact WHERE Department = 'Finance'",
+    "question": "Show me the phone number and email address of all contacts in the finance department.",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Description FROM Account WHERE Name = 'Acme'",
+    "question": "Give me some details on Acme account.",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT BillingCity FROM Account WHERE AnnualRevenue > 1000000",
+    "question": "Which cities are the accounts with annual revenue more than a million from?",
+    "sObject": "Account"
+  },
+  {
+    "fields": [
+      "count()"
+    ],
+    "filters": [
+      {
+        "field": "Department",
+        "op": "=",
+        "value": "Finance"
+      }
+    ],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT count() FROM Contact WHERE Department = 'Finance'",
+    "question": "How many contacts are in the Finance department?",
+    "sObject": "Contact"
+  },
+  {
+    "fields": [
+      "Id"
+    ],
+    "filters": [],
+    "max_records": "",
+    "nulls": "",
+    "order_by": "",
+    "orderby_sort": "",
+    "query": "SELECT Id FROM Account WHERE BillingState = 'California'",
+    "question": "Show me the account ids of California accounts.",
+    "sObject": "Account"
+  }
+]

@@ -1,0 +1,1 @@
+{"question":"Show me the address of Acme account","query":"SELECT BillingStreet, BillingState, BillingPostalCode FROM Account Where Name='Acme'","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

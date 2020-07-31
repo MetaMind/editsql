@@ -1,0 +1,1 @@
+{"question":"List the account id for all contacts.","query":"SELECT AccountId FROM Contact","sObject":"Contact","fields":["AccountId"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

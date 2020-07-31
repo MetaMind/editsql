@@ -1,0 +1,1 @@
+{"question":"Show me the annual revenue for all accounts in New York.","query":"SELECT AnnualRevenue FROM Account Where BillingCity='New York'","sObject":"Account","fields":["Name"],"order_by":"AnnualRevenue","orderby_sort":"DESC","nulls":"FIRST","max_records":"1","filters":[]}

@@ -1,0 +1,1 @@
+{"question":"Show me the industry of all my accounts.","query":"SELECT Industry FROM Account","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

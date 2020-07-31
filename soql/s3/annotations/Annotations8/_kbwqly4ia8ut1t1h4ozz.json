@@ -1,0 +1,1 @@
+{"question":"Which leads are in San Francisco?","query":"SELECT Name FROM Lead Where City = 'San Francisco' ","sObject":"Lead","fields":["Name"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

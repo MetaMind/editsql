@@ -1,0 +1,1 @@
+{"question":"How many customer accounts are there?","query":"SELECT Name FROM Account WHERE Type='Customer'","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

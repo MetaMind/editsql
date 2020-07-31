@@ -1,0 +1,1 @@
+{"question":"Show me the descriptions of all contacts except Bharat Suri.","query":"SELECT Description FROM Contact WHERE Name != 'Bharat Suri'","sObject":"Contact","fields":["Description"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"Name","op":"!=","value":"Bharat Suri"}]}

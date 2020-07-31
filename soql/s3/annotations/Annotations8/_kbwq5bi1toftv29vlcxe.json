@@ -1,0 +1,1 @@
+{"question":"Show me the names of all my leads.","query":"SELECT Name FROM Lead","sObject":"Lead","fields":["Name"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

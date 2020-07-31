@@ -1,0 +1,1 @@
+{"question":"Get the description of all cases","query":"SELECT Description FROM Case","sObject":"Case","fields":["AccountId"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"IsClosed","op":"=","value":"false"}]}

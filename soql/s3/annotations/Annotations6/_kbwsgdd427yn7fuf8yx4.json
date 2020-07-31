@@ -1,0 +1,1 @@
+{"question":"What is the billing city for Acme account?","query":"SELECT BillingCity FROM Account Where Name='Acme'","sObject":"Account","fields":["Name"],"order_by":"AnnualRevenue","orderby_sort":"DESC","nulls":"FIRST","max_records":"1","filters":[]}

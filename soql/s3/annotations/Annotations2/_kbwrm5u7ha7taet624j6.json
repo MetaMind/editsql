@@ -1,0 +1,1 @@
+{"question":"How can I reach out to all the contacts in the finance department?","query":"SELECT Email,Phone FROM Contact WHERE Department = 'Finance'","sObject":"Contact","fields":["Email","Phone"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"Department","op":"=","value":"Finance"}]}

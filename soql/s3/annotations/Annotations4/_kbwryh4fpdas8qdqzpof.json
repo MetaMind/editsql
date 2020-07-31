@@ -1,0 +1,1 @@
+{"question":"How many accounts have annual revenue more than 1 million?","query":"SELECT Name FROM Account WHERE AnnualRevenue > 1000000","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

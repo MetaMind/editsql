@@ -1,0 +1,1 @@
+{"question":"Show me the number of accounts","query":"SELECT count() FROM Account","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

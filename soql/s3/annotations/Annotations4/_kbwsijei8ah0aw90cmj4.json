@@ -1,0 +1,1 @@
+{"question":"How many accounts are in California?","query":"SELECT count() FROM Account Where BillingState='CA'","sObject":"Account","fields":["Name"],"order_by":"AnnualRevenue","orderby_sort":"DESC","nulls":"FIRST","max_records":"1","filters":[]}

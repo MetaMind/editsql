@@ -1,0 +1,1 @@
+{"question":"Which cities are the accounts with annual revenue more than a million from?","query":"SELECT BillingCity FROM Account WHERE AnnualRevenue > 1000000","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

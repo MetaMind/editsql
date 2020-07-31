@@ -1,0 +1,1 @@
+{"question":"Show me the first and last name for each finance department contact.","query":"SELECT FirstName,LastName FROM Contact WHERE Department = 'Finance'","sObject":"Contact","fields":["FirstName","LastName"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"Department","op":"=","value":"Finance"}]}

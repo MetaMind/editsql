@@ -1,0 +1,1 @@
+{"question":"What is the description of Acme?","query":"SELECT Description FROM Account WHERE Name = 'Acme'","sObject":"Account","fields":["NumberOfEmployees"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

@@ -1,0 +1,1 @@
+{"question":"Show me the number of employees in all accounts","query":"SELECT NumberOfEmployees FROM Account","sObject":"Account","fields":["NumberOfEmployees"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

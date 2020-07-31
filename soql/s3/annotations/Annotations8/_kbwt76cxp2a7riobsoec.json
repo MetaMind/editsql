@@ -1,0 +1,1 @@
+{"question":"Get the names of developers for all documents.","query":"SELECT DeveloperName FROM Document","sObject":"Document","fields":["DeveloperName"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

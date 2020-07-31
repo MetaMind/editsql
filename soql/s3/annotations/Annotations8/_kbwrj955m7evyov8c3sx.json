@@ -1,0 +1,1 @@
+{"question":"Show me the phone number of all contacts who are in the finance department.","query":"SELECT Phone FROM Contact WHERE Department = 'Finance'","sObject":"Contact","fields":["Phone"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"Department","op":"=","value":"Finance"}]}

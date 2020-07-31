@@ -1,0 +1,12 @@
+*pyc
+model/*
+data/*
+logs_spider_editsql/*
+processed_data_spider_removefrom/*
+logs_soql_*
+processed_data_soql*
+.DS_Store
+word_emb/
+logs/*
+*.ipynb
+

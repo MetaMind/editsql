@@ -1,0 +1,1 @@
+{"question":"How many contacts have a department?","query":"SELECT count() FROM Contact WHERE Department != ''","sObject":"Contact","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

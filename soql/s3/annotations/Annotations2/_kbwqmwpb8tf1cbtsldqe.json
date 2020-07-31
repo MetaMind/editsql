@@ -1,0 +1,1 @@
+{"question":"How many accounts are related to technology industry?","query":"SELECT count() FROM Account WHERE Industry='Technology'","sObject":"Account","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

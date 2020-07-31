@@ -1,0 +1,1 @@
+{"question":"Which department is Bharat Suri in?","query":"SELECT Department FROM Contact WHERE Name = 'Bharat Suri'","sObject":"Contact","fields":["Department"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"Name","op":"=","value":"Bharat Suri"}]}

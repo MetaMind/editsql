@@ -1,0 +1,1 @@
+{"question":"What are the keywords for the document named quip document?","query":"SELECT Keywords FROM Document WHERE Name = 'quip document'","sObject":"Document","fields":["Keywords"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"Name","op":"=","value":"quip document"}]}

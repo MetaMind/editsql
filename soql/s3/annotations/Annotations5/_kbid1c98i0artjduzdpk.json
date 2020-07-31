@@ -1,0 +1,1 @@
+{"question":"Get all the Ids of my accounts","query":"SELECT Id FROM Account","sObject":"Account","fields":["Id"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

@@ -1,0 +1,1 @@
+{"question":"Show me the account ids of California accounts.","query":"SELECT Id FROM Account WHERE BillingState='California'","sObject":"Account","fields":["Id"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

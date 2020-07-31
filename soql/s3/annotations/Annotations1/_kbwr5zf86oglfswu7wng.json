@@ -1,0 +1,1 @@
+{"question":"Get me the comments on my open cases","query":"SELECT Comments FROM Case WHERE IsClosed = false","sObject":"Case","fields":["AccountId"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"IsClosed","op":"=","value":"false"}]}

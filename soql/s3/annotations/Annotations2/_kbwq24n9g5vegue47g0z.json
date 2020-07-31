@@ -1,0 +1,1 @@
+{"question":"How many leads do I have?","query":"SELECT count() FROM Lead","sObject":"Lead","fields":["count()"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[]}

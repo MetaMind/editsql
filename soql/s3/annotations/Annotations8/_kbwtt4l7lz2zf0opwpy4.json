@@ -1,0 +1,1 @@
+{"question":"Show me the case number for escalated cases","query":"SELECT CaseNumber FROM Case WHERE IsEscalated = true","sObject":"Case","fields":["CaseNumber"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"IsEscalated","op":"=","value":"true"}]}

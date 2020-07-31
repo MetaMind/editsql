@@ -1,0 +1,1 @@
+{"question":"Show me the contact for the account Acme.","query":"SELECT Phone FROM Account WHERE Name = 'Acme'","sObject":"Account","fields":["Phone"],"order_by":"","orderby_sort":"","nulls":"","max_records":"","filters":[{"field":"BillingCity","op":"=","value":"SanFrancisco"}]}
