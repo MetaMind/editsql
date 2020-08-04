@@ -60,14 +60,22 @@ for annotation in annotations:
         dev.append(entry)
 
 
-with open('data/train2.json', 'w') as f:
+with open('train.json', 'w') as f:
     json.dump(train, f, indent=2, sort_keys=True, separators=(',', ': '))
 
 
-with open('data/dev2.json', 'w') as f:
+with open('dev.json', 'w') as f:
     json.dump(dev, f, indent=2, sort_keys=True, separators=(',', ': '))
 
 
-with open('data/dev_gold2.txt', 'w') as f:
+with open('dev_gold.txt', 'w') as f:
     for e in dev:
         f.write(e['query'] + '\t' + e['db_id'] + '\n')
+
+with open('train_db_ids.txt', 'w') as f:
+    for e in train:
+        f.write(e['db_id'] + '\n')
+
+with open('dev_db_ids.txt', 'w') as f:
+    for e in dev:
+        f.write(e['db_id'] + '\n')
