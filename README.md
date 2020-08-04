@@ -136,6 +136,23 @@ This reproduces the SParC result in "Editing-Based SQL Query Generation for Cros
   </tr>
 </table>
 
+### Run SOQL experiment
+
+Data preparation using the scripts available in the `soql` directory.
+- Create the new database schema in `soql/database/[db_name]/`
+- Add the file `schema.txt` in this new directory
+- The schema file must the follow the same format.
+  - Each line contains the `sObject name`, `field name` and `data type` separated by spaces
+  - For example: `Account Name String`
+- `db_name` will now be the db_id for this new database schema. Run `python create_tables.py database/ tables.json` in the `soql/` directory.
+- This will create the `tables.json` file needed by the EditSQL training pipeline
+- Add all annotations to the file `annotations.json`. Each JSON object must have the keys, `query` and `question`
+- Run the script `python parse_all_soql.py` to create `train.json`, `dev.json`, `train_db_ids.txt`, `dev_db_ids.txt` and `dev_gold.txt`
+- Copy all the newly created files under `data/soql/`
+- Run `sh run_soql_editsql.sh` to train and validate the model on the newly prepared data
+
+Same steps can be followed to add new schemas in the experiment. Save the GloVe embeddings and provide the path in the shell script. Logs can be saved at `logs/logs_soql_editsql`.
+
 ### Run CoSQL experiment
 
 First, download [CoSQL](https://yale-lily.github.io/cosql). Then please follow

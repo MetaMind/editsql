@@ -1,0 +1,383 @@
+[
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Account Where BillingState = 'CA'",
+    "query_toks": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "account",
+      "where",
+      "billingstate",
+      "=",
+      "``",
+      "ca",
+      "''"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "account",
+      "where",
+      "billingstate",
+      "=",
+      "value"
+    ],
+    "question": "How many accounts are in California?",
+    "question_toks": [
+      "How",
+      "many",
+      "accounts",
+      "are",
+      "in",
+      "California",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "account",
+        "table_unit": "__account__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__account.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__account.billingstate__"
+          ],
+          "\"CA\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Case",
+    "query_toks": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "case"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "case"
+    ],
+    "question": "How many cases are there",
+    "question_toks": [
+      "How",
+      "many",
+      "cases",
+      "are",
+      "there"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "case",
+        "table_unit": "__case__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__case.id__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Contact",
+    "query_toks": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "contact"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "contact"
+    ],
+    "question": "How many contacts are there?",
+    "question_toks": [
+      "How",
+      "many",
+      "contacts",
+      "are",
+      "there",
+      "?"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__contact.id__"
+          ]
+        ]
+      ],
+      "where": []
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Description FROM Contact WHERE Department = 'Finance'",
+    "query_toks": [
+      "select",
+      "description",
+      "from",
+      "contact",
+      "where",
+      "department",
+      "=",
+      "``",
+      "finance",
+      "''"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "description",
+      "from",
+      "contact",
+      "where",
+      "department",
+      "=",
+      "value"
+    ],
+    "question": "Show me the contact descriptions of the finance department.",
+    "question_toks": [
+      "Show",
+      "me",
+      "the",
+      "contact",
+      "descriptions",
+      "of",
+      "the",
+      "finance",
+      "department",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "contact",
+        "table_unit": "__contact__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__contact.description__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__contact.department__"
+          ],
+          "\"Finance\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT Description FROM Document WHERE Author.Name = 'Bharat Suri'",
+    "query_toks": [
+      "select",
+      "description",
+      "from",
+      "document",
+      "where",
+      "author.name",
+      "=",
+      "``",
+      "bharat",
+      "suri",
+      "''"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "description",
+      "from",
+      "document",
+      "where",
+      "author.name",
+      "=",
+      "value"
+    ],
+    "question": "Show me the document descriptions written by Bharat Suri",
+    "question_toks": [
+      "Show",
+      "me",
+      "the",
+      "document",
+      "descriptions",
+      "written",
+      "by",
+      "Bharat",
+      "Suri"
+    ],
+    "sql": {
+      "from": {
+        "table_name": "document",
+        "table_unit": "__document__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          0,
+          [
+            0,
+            "__document.description__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__document.author.name__"
+          ],
+          "\"Bharat Suri\""
+        ]
+      ]
+    }
+  },
+  {
+    "db_id": "salesforce_2",
+    "query": "SELECT count(id) FROM Document WHERE IsPublic = true",
+    "query_toks": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "document",
+      "where",
+      "ispublic",
+      "=",
+      "true"
+    ],
+    "query_toks_no_value": [
+      "select",
+      "count",
+      "(",
+      "id",
+      ")",
+      "from",
+      "document",
+      "where",
+      "ispublic",
+      "=",
+      "true"
+    ],
+    "question": "Count the number of public records.",
+    "question_toks": [
+      "Count",
+      "the",
+      "number",
+      "of",
+      "public",
+      "records",
+      "."
+    ],
+    "sql": {
+      "from": {
+        "table_name": "document",
+        "table_unit": "__document__"
+      },
+      "group_by": [],
+      "limit": null,
+      "nulls": null,
+      "order_by": [],
+      "select": [
+        [
+          1,
+          [
+            0,
+            "__document.id__"
+          ]
+        ]
+      ],
+      "where": [
+        [
+          false,
+          1,
+          [
+            0,
+            "__document.ispublic__"
+          ],
+          "true"
+        ]
+      ]
+    }
+  }
+]

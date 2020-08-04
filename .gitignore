@@ -1,6 +1,5 @@
 *pyc
 model/*
-data/*
 logs_spider_editsql/*
 processed_data_spider_removefrom/*
 logs_soql_*

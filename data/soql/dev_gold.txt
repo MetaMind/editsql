@@ -1,0 +1,6 @@
+SELECT count(id) FROM Account Where BillingState = 'CA'	salesforce_2
+SELECT count(id) FROM Case	salesforce_2
+SELECT count(id) FROM Contact	salesforce_2
+SELECT Description FROM Contact WHERE Department = 'Finance'	salesforce_2
+SELECT Description FROM Document WHERE Author.Name = 'Bharat Suri'	salesforce_2
+SELECT count(id) FROM Document WHERE IsPublic = true	salesforce_2
