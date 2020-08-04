@@ -184,22 +184,20 @@ def train(model, data, params):
             log.put("patience:\t" + str(patience))
             log.put("save file:\t" + str(last_save_file))
 
-        # if countdown <= 0:
-        #     keep_training = False
-        # keep_training = False
+        if countdown <= 0:
+            keep_training = False
+        keep_training = False
 
         countdown -= 1
         log.put("countdown:\t" + str(countdown))
         log.put("")
 
         epochs += 1
-        if epochs > 100:
-            keep_training = False
 
     log.put("Finished training!")
     log.close()
 
-    # return last_save_file
+    return last_save_file
 
 
 def evaluate(model, data, params, last_save_file, split):
@@ -303,19 +301,19 @@ def main():
         data.output_vocabulary_schema,
         data.anonymizer if params.anonymize and params.anonymization_scoring else None)
 
-    # model = model.cuda()
-    # print('=====================Model Parameters=====================')
-    # for name, param in model.named_parameters():
-    #     print(name, param.requires_grad, param.is_cuda, param.size())
-        # assert param.is_cuda
+    model = model.cuda()
+    print('=====================Model Parameters=====================')
+    for name, param in model.named_parameters():
+        print(name, param.requires_grad, param.is_cuda, param.size())
+        assert param.is_cuda
 
     model.build_optim()
 
-    # print('=====================Parameters in Optimizer==============')
-    # for param_group in model.trainer.param_groups:
-    #     print(param_group.keys())
-    #     for param in param_group['params']:
-    #         print(param.size())
+    print('=====================Parameters in Optimizer==============')
+    for param_group in model.trainer.param_groups:
+        print(param_group.keys())
+        for param in param_group['params']:
+            print(param.size())
 
     if params.fine_tune_bert:
         print('=====================Parameters in BERT Optimizer==============')
@@ -330,7 +328,6 @@ def main():
 
     if params.train:
         last_save_file = train(model, data, params)
-        # train(model, data, params)
     if params.evaluate and 'valid' in params.evaluate_split:
         evaluate(model, data, params, last_save_file, split='valid')
     if params.evaluate and 'dev' in params.evaluate_split:
